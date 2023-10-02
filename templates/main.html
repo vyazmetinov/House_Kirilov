@@ -1,0 +1,472 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home_page</title>
+    <link rel="stylesheet" type="text/html" href="../main/static/main/css/ain.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "{% static 'main/css/ain.css' %}">
+
+
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <!-- Load Leaflet from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
+    integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
+    crossorigin=""></script>
+
+  <!-- Load Esri Leaflet Geocoder from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.css"
+    integrity="sha512-IM3Hs+feyi40yZhDH6kV8vQMg4Fh20s9OzInIIAc4nx7aMYMfo+IenRUekoYsHZqGkREUgx0VvlEsgm7nCDW9g=="
+    crossorigin="">
+  <script src="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.js"
+    integrity="sha512-HrFUyCEtIpxZloTgEKKMq4RFYhxjJkCiF5sDxuAokklOeZ68U2NPfh4MFtyIVWlsKtVbK5GD2/JzFyAfvT5ejA=="
+    crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/java.io@2.4.0/lib/index.js"></script>
+    <script type="text/javascript" src={% static "js/main.js" %}></script>
+</head>
+<body>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <div id = "first_one">
+        <div>
+            <header>
+                <a href="#second" class='nav-about'>О&nbspнас<div class="underline_a"></div></a>
+                <a href="#rasp" class="nav-item">Расположение <div class="underline_r"></div></a>
+                <a href="#book" class="nav-item">Забронировать <div class="underline_r"></div></a>
+                <a href="" class="nav-item">Отзывы<div class="underline_r"></div> </a>
+                <a href="" class="nav-item">Галерея<div class="underline_r"></div></a>
+                <a href="" class="call_number">+7&nbsp(911)&nbsp501-21-21<div class="underline_r"></div></a>
+            </header>
+        </div>
+        <div class="header-down">
+            <div class= "weeks">Незабываемые <br>выходные<br>на природе!
+                <div class="cirkle"></div>
+            </div>
+            <img src="{% static 'main/img/houseOutside.png' %}" alt="logo" width="870" height="468" id = "house_outside">
+        </div>
+
+         <div class="down-header-down">
+             <img src="{% static 'main/img/banyaOutside.png' %}" alt="banya" width="622" height="301" id = "banya_outside">
+             <div class = "rectanglepl">
+                 <div class = "line"></div>
+                 <div class = "placement">Размещение до 12 <br> человек</div>
+             </div>
+             <div class = "rectanglefree">
+                 <div class = "linefree"></div>
+                 <div class = "free">Бесплатная часовая<br>экскурсия</div>
+             </div>
+         </div>
+
+        <div class="second" id="second"><p1 class="about_house">О нас</p1></div>
+
+        <div class="third">
+            <div class="sleep_sections">Спальные места:
+                <div class="block_flats">
+                    <div class="vertical_line"></div>
+                    <div class="flat1_2">
+                        На 1 этаже: диван в гостиной, полуторная кровать 120<br><br>
+                        На 2 этаже: двуспальная кровать 160, тахта на двоих, <br> односпальная кровать, двухярусная детская кровать
+                    </div>
+                </div>
+            </div>
+            <img src="{% static 'main/img/banya_inside.png' %}" alt="banya_inside" width="642px" height="363px" id="banya_inside">
+        </div>
+
+        <div class="forth">
+            <img src="{% static 'main/img/living_room.png' %}" alt="house_inside" width="642px" height="363px" id="banya_inside">
+            <div class="plot_house">Участок и дом:
+                <div class="block_flats">
+                    <div class="vertical_line_plot"></div>
+                    <div class="flat1_2">
+                        Проведена обработка от клещей <br><br>
+                        Участок 25 соток <br><br>
+                        Отапливаемый деревянный гостевой дом 100м2 <br><br>
+                        Внутренняя отделка: натуральное дерево <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fifth">
+            <div class="living"> Условия и правила проживания:
+                <div class="block_flats">
+                    <div class="vertical_line_living"></div>
+                    <div class="flat1_2">
+                        Курение в доме запрещается
+                        <div class="str">При отмене бронирования менее, чем за 10 суток до <br> заезда, залог не возвращается</div>
+                        <div class="str"></divclass>Отапливаемый деревянный гостевой дом 100м<sup>2</sup> </div>
+                        <div class="str"></divclass>Шуметь после 22:00 на территории (улице) запрещается</div>
+                        <div class="str">Возможна сдача на неделю и более длительный срок.</div>
+                    </div>
+                </div>
+            </div>
+            <img src="{% static 'main/img/kitchen.png' %}" alt="kitchen"width="642px" height="363px" id="kitchen">
+        </div>
+
+        <div class="sixth">
+            <div class="icon">
+                <img src="{% static 'main/img/mdi_playground-seesaw.png' %}" alt="" class="img">
+                <p class="untxt">Детская&nbspплощадка</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'main/img/wifi.png' %}" alt="" class="img">
+                <p class="untxt">Wi&nbsp-&nbspFi</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'main/img/ic_outline-water-drop.png' %}" alt="" class="img">
+                <p class="untxt">Водоснабжение</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'main/img/outdoor_grill.png' %}" alt="" class="img">
+                <p class="untxt">Мангал</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'main/img/shower.png' %}" alt="" class="img">
+                <p class="untxt">Баня&nbspс&nbspжаркой<br>парилкой&nbsp(до&nbsp120°)</p>
+            </div>
+
+        </div>
+        <div class="rasp" id="rasp">Расположение</div>
+        <div class="under_rasp">
+            <div id="map">
+                <script>
+                  var map = L.map('map').setView([59.824217, 38.384868], 10);
+                  data={};
+                  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+                  }).addTo(map);
+                  var marker = L.marker([59.824217, 38.384868]);
+                  marker.addTo(map);
+                </script>
+                </div>
+
+            <div class="place">
+                <div class="vertical_line_place"></div>
+                <div class="place_txt">
+                    Вологодская&nbspобласть,&nbspКириллов,<br>
+                    улица Калачёва д.57<br><br>
+                    До Сиверского озера 250м<br><br>
+                    Рядом с Экотелем<br><br>
+                    От центра Кириллова&nbsp2,5 км
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="book">Забронировать</div>
+        <div class="under_book">
+            <div class="custom">
+                <div class="upper_txt">Конфигурация</div>
+                <form>
+                  <div class="__select" data-state="">
+                    <div class="__select__title"></div>
+                    <div class="__select__content">
+                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                        <label for="singleSelect0" tabindex="0" class="__select__label" data-value="Только дом"></label>
+                    <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                        <label for="singleSelect1" tabindex="0" class="__select__label" data-value="Баня"></label>
+                    <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                        <label for="singleSelect2" tabindex="0" class="__select__label" data-value="Лодка"></label>
+                    <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                        <label for="singleSelect3" tabindex="0" class="__select__label" data-value="Баня&nbspи&nbspлодка"></label>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="custom">
+                <div class="upper_txt">Заезд</div>
+                <div class="under_txt">
+
+                </div>
+                <div class="contianer">
+      <div class="calendar">
+        <div class="calendar-header">
+
+            <div class="month-picker" id="month-picker">
+                <div class="year-change" id="pre-month">
+                  <pre><</pre>
+                </div>
+
+                <span id="month"> September </span>
+                <span id="year"> 2023 </span>
+
+                <div class="year-change" id="next-month">
+                  <pre>></pre>
+                </div>
+          </div>
+
+          <div class="year-picker" id="year-picker">
+            <span class="year-change" id="pre-year">
+              <pre><</pre>
+            </span>
+
+            <span id="year"> 2023 </span>
+
+            <span class="year-change" id="next-year">
+              <pre>></pre>
+            </span>
+
+          </div>
+        </div>
+
+        <div class="calendar-body">
+          <div class="calendar-week-days">
+            <div>Пн</div>
+            <div>Вт</div>
+            <div>Ср</div>
+            <div>Чт</div>
+            <div>Пт</div>
+            <div>Сб</div>
+            <div>Вс</div>
+          </div>
+          <div class="calendar-days">
+          </div>
+        </div>
+        <div class="month-list"></div>
+      </div>
+    </div>
+            </div>
+            <div class="custom">
+                <div class="upper_txt">Выезд</div>
+                <div class="under_txt">-</div>
+            </div>
+            <div class="custom">
+                <div class="upper_txt">Взрослые&nbspи&nbspдети</div>
+                <div class="under_txt">-</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const selectSingle = document.querySelector('.__select');
+        const selectSingle_title = selectSingle.querySelector('.__select__title');
+        const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+
+        // Toggle menu
+        selectSingle_title.addEventListener('click', () => {
+          if ('active' === selectSingle.getAttribute('data-state')) {
+            selectSingle.setAttribute('data-state', '');
+          } else {
+            selectSingle.setAttribute('data-state', 'active');
+          }
+        });
+
+        // Close when click to option
+        for (let i = 0; i < selectSingle_labels.length; i++) {
+          selectSingle_labels[i].addEventListener('click', (evt) => {
+            selectSingle_title.textContent = evt.target.textContent;
+            selectSingle.setAttribute('data-state', '');
+          });
+        }
+    </script>
+
+
+
+
+
+    <script>
+        const isLeapYear = (year) => {
+    return (
+      (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
+      (year % 100 === 0 && year % 400 === 0)
+    );
+  };
+  const getFebDays = (year) => {
+    return isLeapYear(year) ? 29 : 28;
+  };
+  let calendar = document.querySelector('.calendar');
+  const month_names = [
+    'Январь',
+    'Февраль',
+    'Март',
+    'Апрель',
+    'Май',
+    'Июнь',
+    'Июль',
+    'Август',
+    'Сентябрь',
+    'Октябрь',
+    'Ноябрь',
+    'Декабрь',
+  ];
+  let month_picker = document.querySelector('#month');
+  const dayTextFormate = document.querySelector('.day-text-formate');
+  const timeFormate = document.querySelector('.time-formate');
+  const dateFormate = document.querySelector('.date-formate');
+  month_picker.onclick = () => {
+    month_list.classList.remove('hideonce');
+    month_list.classList.remove('hide');
+    month_list.classList.add('show');
+    dayTextFormate.classList.remove('showtime');
+    dayTextFormate.classList.add('hidetime');
+    timeFormate.classList.remove('showtime');
+    timeFormate.classList.add('hideTime');
+    dateFormate.classList.remove('showtime');
+    dateFormate.classList.add('hideTime');
+  };
+
+  const generateCalendar = (month, year) => {
+    let calendar_days = document.querySelector('.calendar-days');
+    calendar_days.innerHTML = '';
+    let calendar_header_year = document.querySelector('#year');
+    let calendar_header_month = document.querySelector('#month');
+    let days_of_month = [
+      31,
+      getFebDays(year),
+      31,
+      30,
+      31,
+      30,
+      31,
+      31,
+      30,
+      31,
+      30,
+      31,
+    ];
+
+    let currentDate = new Date();
+
+    month_picker.innerHTML = month_names[month];
+
+    calendar_header_year.innerHTML = year;
+    calendar_header_month.innerHTML = month_names[month];
+
+    let first_day = new Date(year, month);
+    let snd = first_day.getDay();
+    if(snd === 0){
+        snd += 7;
+    }
+
+
+  for (let i = 0; i <= days_of_month[month] + snd - 2; i++) {
+
+      let day = document.createElement('div');
+
+      if (i >= snd - 1) {
+        day.innerHTML = i - snd + 2;
+
+        if (i - snd + 2 === currentDate.getDate() &&
+          year === currentDate.getFullYear() &&
+          month === currentDate.getMonth()
+        ) {
+          day.classList.add('current-date');
+
+        }
+        console.log('Today', first_day.getDay())
+        if(i - first_day.getDay() + 2 < currentDate.getDate() &&
+            year <= currentDate.getFullYear() &&
+            month <= currentDate.getMonth()
+        ) {
+            day.classList.add('previous-date');
+        }
+        if(month < currentDate.getMonth() && year <= currentDate.getFullYear()){
+            day.classList.add('previous-date');
+        }
+      }
+      calendar_days.appendChild(day);
+    }
+  };
+
+  let month_list = calendar.querySelector('.month-list');
+  month_names.forEach((e, index) => {
+    let month = document.createElement('div');
+    month.innerHTML = `<div>${e}</div>`;
+
+    month_list.append(month);
+    month.onclick = () => {
+      currentMonth.value = index;
+      generateCalendar(currentMonth.value, currentYear.value);
+      month_list.classList.replace('show', 'hide');
+      dayTextFormate.classList.remove('hideTime');
+      dayTextFormate.classList.add('showtime');
+      timeFormate.classList.remove('hideTime');
+      timeFormate.classList.add('showtime');
+      dateFormate.classList.remove('hideTime');
+      dateFormate.classList.add('showtime');
+    };
+  });
+
+  (function () {
+    month_list.classList.add('hideonce');
+  })();
+
+  document.querySelector('#pre-month').onclick = () => {
+      if(currentMonth.value > 0) {
+          --currentMonth.value;
+          generateCalendar(currentMonth.value, currentYear.value);
+      }
+      else{
+          currentMonth.value += 11;
+          --currentYear.value;
+          generateCalendar(currentMonth.value, currentYear.value);
+          console.log(currentMonth.value)
+      }
+
+  }
+
+  document.querySelector('#next-month').onclick = () => {
+      if(currentMonth.value < 11) {
+          ++currentMonth.value;
+          generateCalendar(currentMonth.value, currentYear.value);
+          console.log(currentMonth.value)
+      }
+      else{
+          currentMonth.value -= 11;
+          ++currentYear.value;
+          generateCalendar(currentMonth.value, currentYear.value);
+          console.log(currentMonth.value)
+      }
+
+  }
+
+  document.querySelector('#pre-year').onclick = () => {
+    --currentYear.value;
+    generateCalendar(currentMonth.value, currentYear.value);
+  };
+  document.querySelector('#next-year').onclick = () => {
+    ++currentYear.value;
+    generateCalendar(currentMonth.value, currentYear.value);
+  };
+
+  let currentDate = new Date();
+  let currentMonth = { value: currentDate.getMonth() };
+  let currentYear = { value: currentDate.getFullYear() };
+  generateCalendar(currentMonth.value, currentYear.value);
+
+  const todayShowTime = document.querySelector('.time-formate');
+  const todayShowDate = document.querySelector('.date-formate');
+
+  const currshowDate = new Date();
+  const showCurrentDateOption = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    weekday: 'long',
+  };
+    </script>
+</body>
+</html>
