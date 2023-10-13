@@ -628,9 +628,7 @@ h1 {
       padding-top: 31px;
       padding-right: 27px;
   }
-  .month-picker:hover {
-    background-color: var(--color-hover);
-  }
+
   .month-picker:hover {
     color: var(--color-txt);
   }
