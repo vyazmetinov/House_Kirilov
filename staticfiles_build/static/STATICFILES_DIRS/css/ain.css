@@ -4,19 +4,18 @@ body {
     margin: 0;
 }
 #first_one{
-    transform: translate(-10%, 0%);
+    transform: translate(-6.5%, 0%);
 }
 header {
     font-size: 2vw;
-    float: left;
     display: flex;
     align-items: center;
     font-family: Raleway, sans-serif;
-    padding-top: 40px;
-    padding-left: 365px;
+    padding-top: 2vw;
+    padding-left: 11vw;
 }
 .nav-item{
-    margin-right: 40px;
+    margin-right: 2vw;
     text-decoration: none;
     color: #FFFFFF;
     box-sizing: content-box;
@@ -41,7 +40,7 @@ header {
 }
 .nav-about{
     color: #ffffff;
-    margin-right: 40px;
+    margin-right: 2vw;
     text-decoration: none;
 }
 .nav-about:hover .underline_a{
@@ -69,7 +68,7 @@ header {
     color: #FFFFFF;
     font-style: normal;
     text-decoration: none;
-    padding-left: 80px;
+    padding-left: 4vw;
 }
 .call_number:hover .underline_r{
     stroke: #C72929;
@@ -78,27 +77,28 @@ header {
 }
 .header-down{
     position: relative;
-    padding-top: 100px;
+    padding-top: 8vh;
     align-content: center;
-    min-height: 525px;
-    padding-left: 353px;
+    min-height: 23vh;
+    padding-left: 11vw;
     display: flex;
 }
 .weeks{
     color: white;
     font-family: Raleway, sans-serif;
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: 700;
     line-height: 134.523%; /* 80.714px */
-    letter-spacing: 6px;
-    padding-right: 146px;
-    padding-top: 120px;
+    letter-spacing: 0.3vw;
+    padding-right: 9vw;
+    padding-top: 10vh;
 }
+
 .cirkle{
     position: absolute;
-    top: 30px;
-    width: 531px;
-    height: 531px;
+    top: 13vw;
+    width: 12vw;
+    height: 6vw;
     flex-shrink: 0;
     border-radius: 531px;
     opacity: 0.3;
@@ -109,22 +109,22 @@ header {
 
 .down-header-down{
     position: relative;
-    padding-left: 343px;
-    padding-top: 10px;
+    padding-left: 11vw;
+    padding-top: 4vh;
     align-items: center;
     display: flex;
 }
 #banya_outside{
     flex-shrink: 0;
-    margin-right: 60px;
+    margin-right: 3vw;
 }
 .rectanglepl{
-    width: 406px;
-    height: 295px;
+    width: 21vw;
+    height: 27vh;
     flex-shrink: 0;
-    border-radius: 35px;
-    border: 2px solid #C72929;
-    margin-right: 60px;
+    border-radius: 9%;
+    border: 0.17vw solid #C72929;
+    margin-right: 3vw;
 }
 .placement {
     position: relative;
@@ -132,7 +132,7 @@ header {
     font-family: Raleway, sans-serif;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 2vw;
     line-height: 96.5%;
     font-style: normal;
 }
@@ -140,7 +140,7 @@ header {
     position: relative;
     top: 95%;
     left: 12.5%;
-    width: 302px;
+    width: 15.5vw;
     height: 0;
     flex-shrink: 0;
     stroke-width: 1px;
@@ -149,11 +149,11 @@ header {
     border-radius: 35%;
 }
 .rectanglefree{
-    width: 406px;
-    height: 295px;
+    width: 21vw;
+    height: 27vh;
     flex-shrink: 0;
-    border-radius: 35px;
-    border: 2px solid #FFFFFF;
+    border-radius: 9%;
+    border: 0.17vw solid #ffffff;
 }
 .free{
     position: relative;
@@ -161,7 +161,7 @@ header {
     font-family: Raleway, sans-serif;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 2vw;
     line-height: 96.5%;
     font-style: normal;
 }
@@ -169,7 +169,7 @@ header {
     position: relative;
     top: 95%;
     left: 12.5%;
-    width: 302px;
+    width: 15.5vw;
     height: 0;
     flex-shrink: 0;
     stroke-width: 1px;
@@ -180,8 +180,8 @@ header {
 .second{
     position: relative;
     align-items: center;
-    padding-top: 30px;
-    padding-left: 1000px;
+    padding-top: 8vh;
+    padding-left: 52vw;
     font-weight: 600;
     line-height: 96.523%; /* 57.914px */
     letter-spacing: -1.5px;
@@ -189,45 +189,47 @@ header {
 .about_house{
     font-family: Raleway, sans-serif;
     color: #ffffff;
-    font-size: 60px;
+    position: relative;
+    font-size: 3vw;
+    padding-top: 9vh;
+    /* text-align: center; */
+    padding-left: 2vw;
 }
 .third{
     position: relative;
-    padding-top: 30px;
-    padding-left: 363px;
+    padding-top: 8vh;
+    padding-left: 12vw;
     align-items: center;
     min-height: auto;
     display: flex;
 }
 .sleep_sections{
     font-family: Raleway, sans-serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: #FFFFFF;
-    padding-right: 200px;
-    letter-spacing: 2px;
+    padding-right: 12vw;
+    letter-spacing: 0.05vw;
 }
 .block_flats{
-    padding-top: 10px;
-    font-size: 20px;
+    padding-top: 1vh;
+    font-size: 1.2vw;
     display: flex;
 }
 .vertical_line{
     position: relative;
-    height: 101px;
+    height: 10vh;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
-
 }
 .flat1_2{
-    padding-left: 22px;
-    width: 700px;
-
+    padding-left: 1vw;
+    width: 37vw;
 }
 .forth{
     position: relative;
-    padding-top: 30px;
-    padding-left: 353px;
+    padding-top: 5vh;
+    padding-left: 11vw;
     align-items: center;
     min-height: auto;
     display: flex;
@@ -235,38 +237,38 @@ header {
 
 .plot_house{
     font-family: Raleway, sans-serif;
-    font-size: 40px;
-    letter-spacing: 2px;
+    font-size: 2vw;
+    letter-spacing: 0.05vw;
     color: #FFFFFF;
-    padding-left: 301px;
+    padding-left: 16vw;
 }
 .vertical_line_plot{
     position: relative;
-    height: 170px;
+    height: 18vh;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
 .fifth{
     position: relative;
-    padding-top: 30px;
-    padding-left: 353px;
+    padding-top: 7vh;
+    padding-left: 11vw;
     align-items: center;
     min-height: auto;
     display: flex;
 }
 .living{
     font-family: Raleway, sans-serif;
-    font-size: 40px;
-    letter-spacing: 2px;
+    font-size: 2vw;
+    letter-spacing: 0.05vw;
     color: #FFFFFF;
     font-weight: 400;
-    padding-right: 217px;
+    padding-right: 13vw;
 }
 
 .vertical_line_living{
     position: relative;
-    height: 232px;
+    height: 23vh;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -276,27 +278,27 @@ header {
 }
 .sixth{
     position: relative;
-    padding-top: 60px;
-    padding-left: 353px;
+    padding-top: 10vh;
+    padding-left: 11vw;
     align-items: center;
     min-height: auto;
     display: flex;
 }
 .icon{
-    height: 261px;
-    width: 500px;
+    height: 19vh;
+    width: 17vw;
     display: grid;
     justify-items: center;
     text-align: center;
-
 }
 .img{
     align-content: center;
-
+    width: 8vw;
+    height: 14vh;
 }
 .untxt{
     font-family: Raleway, sans-serif;
-    font-size: 35px;
+    font-size: 1.8vw;
     color: #ffffff;
     text-align: center;
 }
@@ -309,54 +311,54 @@ header {
 }
 .rasp{
     position: relative;
-    padding-top: 100px;
-    padding-left: 900px;
+    padding-top: 10vh;
+    padding-left: 40vw;
     color: #ffffff;
     font-family: Raleway, sans-serif;
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: 600;
     line-height: 96.523%; /* 57.914px */
-    letter-spacing: -1.5px;
+    letter-spacing: -0.2vw;
     text-align: center;
     display: flex;
 }
 .place{
     display: flex;
-    font-size: 30px;
+    font-size: 1.5vw;
     text-align: left;
     display: flex;
-    letter-spacing: 2px;
-    padding-left: 100px;
+    letter-spacing: 0.15vw;
+    padding-left: 12vw;
 }
 #map{
     position: relative;
-    width: 907px;
-    height: 530px;
-    border-radius: 30px;
+    width: 42vw;
+    height: 50vh;
+    border-radius: 8%;
 }
 .under_rasp{
     position: relative;
-    padding-left: 353px;
-    padding-top: 50px;
+    padding-left: 11vw;
+    padding-top: 10vh;
     display: flex;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 2vw;
     font-family: Raleway, sans-serif;
 }
 .place_txt{
-    padding-left: 30px;
+    padding-left: 1vw;
 }
 .vertical_line_place{
     position: relative;
-    height: 280px;
+    height: 15vw;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
 #book{
     position: relative;
-    padding-left: 380px;
-    padding-top: 100px;
+    padding-left: 10vw;
+    padding-top: 10vh;
     text-align: center;
     color: #FFF;
     font-family: Raleway, sans-serif;
@@ -364,22 +366,22 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 96.523%; /* 57.914px */
-    letter-spacing: -1.5px;
+    letter-spacing: -0.2vw;
 }
 .under_book{
     position: relative;
-    padding-top: 50px;
-    padding-left: 353px;
+    padding-top: 6vh;
+    padding-left: 11vw;
     display: flex;
     color: #FFFFFF;
 }
 .custom{
-    font-size: 30px;
+    font-size: 1.6vw;
     font-family: Raleway, sans-serif;
-    padding-right: 300px;
+    padding-right: 9vw;
 }
 .upper_txt{
-    padding-bottom: 5px;
+    padding-bottom: 1.5vh;
 }
 
 *,
@@ -398,10 +400,12 @@ h1 {
 .__select {
   position: relative;
   display: flex;
-  width: 250px;
-  height: 40px;
+  width: 13vw;
+  height: 3vh;
   margin: 0 auto;
+  font-size: 0.8vw;
   z-index: 1;
+  justify-content: center;
 }
 .__select[data-state=active] .__select__title::before {
   transform: translate(-3px, -50%) rotate(-45deg);
@@ -426,21 +430,22 @@ h1 {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 0.05vw 0.1vh;
+  border-radius: 0.4vw;
   border: solid 1px #FFFFFF;
   cursor: pointer;
   z-index: 2;
+  top: 50%;
 }
 .__select__title::before, .__select__title::after {
   content: "";
   position: absolute;
-  padding-left: 10px;
+  padding-left: 0.5vw;
   top: 50%;
-  right: 16px;
+  right: 1vw;
   display: block;
-  width: 10px;
-  height: 2px;
+  width: 0.47vw;
+  height: 0.28vh;
   transition: all 0.3s ease-out;
   background-color: #FFFFFF;
   transform: translate(-3px, -50%) rotate(45deg);
@@ -458,8 +463,8 @@ h1 {
 
 .__select__content {
   position: absolute;
-  top: 40px;
-  left: 3px;
+  top: 3vh;
+  left: 0.1vw;
   display: flex;
   flex-direction: column;
   width: calc(100% - 6px);
@@ -473,6 +478,8 @@ h1 {
   transition: all 0.3s ease-out;
   z-index: 1;
 }
+
+.__select__content {}
 
 .__select__input {
   display: none;
@@ -558,12 +565,12 @@ h1 {
     height: 100%;
   }
   .calendar {
-    height: 363px;
+    height: 37.61vh;
     width: max-content;
     background-color: black;
     border-radius: 25px;
     overflow: hidden;
-    padding: 30px 50px 0px 50px;
+    padding: 3vh 2vw 0px 3vh;
   }
   .calendar {
     box-shadow: var(--shadow);
@@ -580,7 +587,7 @@ h1 {
     border-radius: 25px;
   }
   .calendar-body {
-    padding: 10px;
+    padding: 1vw;
     transform: translateY(-40px);
   }
   .calendar-week-days {
@@ -589,30 +596,31 @@ h1 {
     font-weight: 600;
     cursor: pointer;
     color: #FFFFFF;
+    padding-bottom: 2vh;
   }
 
   .calendar-week-days div {
     display: grid;
     place-items: center;
     color: var(--bg-second);
-    height: 50px;
+    height: 5vh;
   }
   .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
+    gap: 1.2vw;
     color: var(--color-txt);
     transform: translateY(-40px);
   }
 
 .calendar-days {}
   .calendar-days div {
-    width: 37px;
-    height: 33px;
+    width: 1.5vw;
+    height: 2.1vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 0.5vh;
     position: relative;
     cursor: pointer;
     animation: to-top 1s forwards;
@@ -637,12 +645,12 @@ h1 {
     align-items: center;
   }
   .year-change {
-    height: 87px;
-    width: 50px;
+    height: 4vh;
+    width: 2vw;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    margin: 0px 10px;
+    margin: 0vw 1vh;
     cursor: pointer;
   }
   .year-change:hover {
@@ -679,7 +687,7 @@ h1 {
   .calendar-days div.current-date {
     color: var(--color-txt);
     background-color: #C72929;
-    border-radius: 20%;
+    border-radius: 25%;
   }
   .calendar-days div.previous-date {
       color: #707070;
