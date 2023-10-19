@@ -120,7 +120,7 @@ header {
 }
 .rectanglepl{
     width: 21vw;
-    height: 27vh;
+    height: 28vh;
     flex-shrink: 0;
     border-radius: 9%;
     border: 0.17vw solid #C72929;
@@ -150,7 +150,7 @@ header {
 }
 .rectanglefree{
     width: 21vw;
-    height: 27vh;
+    height: 28vh;
     flex-shrink: 0;
     border-radius: 9%;
     border: 0.17vw solid #ffffff;
@@ -217,7 +217,7 @@ header {
 }
 .vertical_line{
     position: relative;
-    height: 10vh;
+    height: auto;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -244,7 +244,7 @@ header {
 }
 .vertical_line_plot{
     position: relative;
-    height: 18vh;
+    height: auto;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -268,7 +268,7 @@ header {
 
 .vertical_line_living{
     position: relative;
-    height: 23vh;
+    height: auto;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -285,7 +285,6 @@ header {
     display: flex;
 }
 .icon{
-    height: 19vh;
     width: 17vw;
     display: grid;
     justify-items: center;
@@ -294,7 +293,6 @@ header {
 .img{
     align-content: center;
     width: 8vw;
-    height: 14vh;
 }
 .untxt{
     font-family: Raleway, sans-serif;
@@ -350,7 +348,7 @@ header {
 }
 .vertical_line_place{
     position: relative;
-    height: 15vw;
+    height: auto;
     width: 0;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
