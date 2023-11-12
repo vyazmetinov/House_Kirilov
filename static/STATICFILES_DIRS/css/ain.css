@@ -332,7 +332,7 @@ header {
     position: relative;
     width: 42vw;
     height: 50vh;
-    border-radius: 25px;
+    border-radius: 2.5vh;
 }
 .under_rasp{
     position: relative;
@@ -360,7 +360,7 @@ header {
     text-align: center;
     color: #FFF;
     font-family: Raleway, sans-serif;
-    font-size: 60px;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 600;
     line-height: 96.523%; /* 57.914px */
@@ -406,17 +406,17 @@ h1 {
   text-align: center;
 }
 .__select[data-state=active] .__select__title::before {
-  transform: translate(-3px, -50%) rotate(-45deg);
+  transform: translate(-0.25vh, -50%) rotate(-45deg);
 }
 .__select[data-state=active] .__select__title::after {
-  transform: translate(3px, -50%) rotate(45deg);
+  transform: translate(0.25vh, -50%) rotate(45deg);
 }
 .__select[data-state=active] .__select__content {
   border-width: 1px;
   border-color: #FFFFFF;
 }
 .__select[data-state=active] .__select__label {
-  max-height: 40px;
+  max-height: 10vh;
   border-width: 1px;
 }
 .__select[data-state=active] .__select__label::before {
@@ -446,10 +446,10 @@ h1 {
   height: 0.28vh;
   transition: all 0.3s ease-out;
   background-color: #FFFFFF;
-  transform: translate(-3px, -50%) rotate(45deg);
+  transform: translate(-0.3vh, -50%) rotate(45deg);
 }
 .__select__title::after {
-  transform: translate(3px, -50%) rotate(-45deg);
+  transform: translate(0.3vh, -50%) rotate(-45deg);
 }
 .__select__title:hover {
   border-color: #C72929;
@@ -520,13 +520,13 @@ h1 {
 }
 .__select__label::after {
   position: absolute;
-  top: -40px;
+  top: -4vh;
   left: 0;
   display: flex;
   align-items: center;
-  width: 200px;
-  height: 40px;
-  padding: 8px 16px;
+  width: 20vw;
+  height: 4vh;
+  padding: 0.8vh 1.6vw;
   color: #FFFFFF;
   z-index: -1;
 }
