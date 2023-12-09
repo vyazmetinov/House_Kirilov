@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +45,7 @@
     crossorigin=""></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://unpkg.com/java.io@2.4.0/lib/index.js"></script>
-    <script type="text/javascript" src={% static "js/main.js" %}></script>
+
 </head>
 <body>
 
@@ -209,53 +211,54 @@
 
                 </div>
                 <div class="contianer">
-      <div class="calendar">
-        <div class="calendar-header">
-
-            <div class="month-picker" id="month-picker">
-                <div class="year-change" id="pre-month">
-                  <div><</div>
-                </div>
-
-                <span id="month"> September </span>
-                <span id="year"> 2023 </span>
-
-                <div class="year-change" id="next-month">
-                  <div>></div>
-                </div>
-          </div>
-
-          <div class="year-picker" id="year-picker">
-            <span class="year-change" id="pre-year">
-              <pre><</pre>
-            </span>
-
-            <span id="year"> 2023 </span>
-
-            <span class="year-change" id="next-year">
-              <pre>></pre>
-            </span>
-
-          </div>
-        </div>
-
-        <div class="calendar-body">
-          <div class="calendar-week-days">
-            <div>Пн</div>
-            <div>Вт</div>
-            <div>Ср</div>
-            <div>Чт</div>
-            <div>Пт</div>
-            <div>Сб</div>
-            <div>Вс</div>
-          </div>
-          <div class="calendar-days">
-          </div>
-        </div>
-        <div class="month-list"></div>
-      </div>
-    </div>
+                    <div class="date_book" style="display: none" data-value="{{date_book}}"></div>
+                      <div class="calendar">
+                        <div class="calendar-header">
+                
+                            <div class="month-picker" id="month-picker">
+                                <div class="year-change" id="pre-month">
+                                  <div><</div>
+                                </div>
+                
+                                <span id="month"> September </span>
+                                <span id="year"> 2023 </span>
+                
+                                <div class="year-change" id="next-month">
+                                  <div>></div>
+                                </div>
+                          </div>
+                
+                          <div class="year-picker" id="year-picker">
+                            <span class="year-change" id="pre-year">
+                              <pre><</pre>
+                            </span>
+                
+                            <span id="year"> 2023 </span>
+                
+                            <span class="year-change" id="next-year">
+                              <pre>></pre>
+                            </span>
+                
+                          </div>
+                        </div>
+                
+                        <div class="calendar-body">
+                          <div class="calendar-week-days">
+                            <div>Пн</div>
+                            <div>Вт</div>
+                            <div>Ср</div>
+                            <div>Чт</div>
+                            <div>Пт</div>
+                            <div>Сб</div>
+                            <div>Вс</div>
+                          </div>
+                          <div class="calendar-days">
+                          </div>
+                        </div>
+                        <div class="month-list"></div>
+                      </div>
             </div>
+    </div>
             <div class="custom">
                 <div class="upper_txt">Выезд</div>
                 <div class="under_txt">-</div>
@@ -294,6 +297,7 @@
 
 
     <script>
+
         const isLeapYear = (year) => {
     return (
       (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
@@ -304,6 +308,7 @@
     return isLeapYear(year) ? 29 : 28;
   };
   let calendar = document.querySelector('.calendar');
+
   const month_names = [
     'Январь',
     'Февраль',
@@ -339,6 +344,7 @@
     calendar_days.innerHTML = '';
     let calendar_header_year = document.querySelector('#year');
     let calendar_header_month = document.querySelector('#month');
+
     let days_of_month = [
       31,
       getFebDays(year),
@@ -367,6 +373,8 @@
         snd += 7;
     }
 
+    let book = document.querySelector('.date_book').getAttribute('data-value')
+    console.log(book)
 
   for (let i = 0; i <= days_of_month[month] + snd - 2; i++) {
 
@@ -382,7 +390,6 @@
           day.classList.add('current-date');
 
         }
-        console.log('Today', first_day.getDay())
         if(i - first_day.getDay() + 2 < currentDate.getDate() &&
             year <= currentDate.getFullYear() &&
             month <= currentDate.getMonth()
@@ -391,6 +398,77 @@
         }
         if(month < currentDate.getMonth() && year <= currentDate.getFullYear()){
             day.classList.add('previous-date');
+        }
+        let k = 0;
+        let r = 0
+        let y = 0;
+        let m = 0;
+        let d0 = 0;
+        let d1 = 0;
+        for(let j = 0; j < book.length ; j++){
+            if(book[j] === '-'){
+                k += 1;
+                continue;
+            }
+            if(book[j] === ' '){
+                if (i - snd + 2 >= d0 && i - snd + 2 <= d1 % 100 &&
+                  year === y &&
+                  month === m - 1
+                ) {
+                  day.classList.add('previous-date');}
+                k = 0;
+                y = 0;
+                m = 0;
+                if(r % 2 === 1){
+                    d0 = 0;
+                }
+                r += 1;
+                continue;
+            }
+            if(k === 0){
+                if(y === 0){
+                    y += Number(book[j]);
+                }
+                else{
+                    y *= 10;
+                    y += Number(book[j])
+                }
+            }
+            if(k === 1){
+                if(m === 0){
+                    m += Number(book[j]);
+                }
+                else{
+                    m *= 10;
+                    m += Number(book[j])
+                }
+            }
+            if(k === 2){
+                if(r % 2 === 0) {
+                    if (d0 === 0) {
+                        d0 += Number(book[j]);
+                    } else {
+                        d0 *= 10;
+                        d0 += Number(book[j])
+                    }
+                    d1 = d0;
+                }
+                else{
+                    if (d1 === 0) {
+                        d1 += Number(book[j]);
+                    } else {
+                        d1 *= 10;
+                        d1 += Number(book[j])
+                    }
+                }
+            }
+
+
+
+
+        console.log(y, ' ', m, ' ', d0, d1)
+
+
         }
       }
       calendar_days.appendChild(day);
@@ -474,5 +552,6 @@
     weekday: 'long',
   };
     </script>
+
 </body>
 </html>
