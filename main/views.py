@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
+from static.STATICFILES_DIRS.scripts.api.cron.mai import get_all_rest
 
+q = get_all_rest()
 def index(request):
-    return render(request, 'main.html')
-def map(request):
-    return render(request, 'map.html')
+    data = {'date_book': q}
+    return render(request, 'main.html', context=data)
+

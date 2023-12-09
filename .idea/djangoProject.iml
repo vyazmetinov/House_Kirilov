@@ -23,6 +23,7 @@
     <orderEntry type="library" name="esri-leaflet" level="application" />
     <orderEntry type="library" name="leaflet" level="application" />
     <orderEntry type="library" name="java.io" level="application" />
+    <orderEntry type="library" name="pyscript" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
