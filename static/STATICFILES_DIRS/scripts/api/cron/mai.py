@@ -2,13 +2,16 @@ import json
 from datetime import date
 
 import requests
-import yaml
-from yaml.loader import SafeLoader
 
-with open('static/STATICFILES_DIRS/scripts/api/cron/token.yml') as f:
-    t = yaml.load(f, Loader=SafeLoader)['token']
+req_token = requests.request("POST", "https://api.avito.ru/token/?grant_type=client_credentials&client_id=i1RWsfzle6jUgZsvrSlh&client_secret=VacQYfLcTpshj_pgE6Kn3sinH5Qw2abmD0Velxva")
+data = json.loads(req_token.text)
+print(data)
+t = data["access_token"]
+print(t)
 
 mess_url = "https://api.avito.ru/realty/v1/"
+
+
 
 def get_all_rest():
     date_rents = ""
@@ -32,7 +35,7 @@ def get_all_rest():
 
             date_rents += str(a) + " "
             date_rents += str(b) + " "
-
+        print(date_rents)
         print(json.loads(rent.text))
         return date_rents
     except Exception as e:
