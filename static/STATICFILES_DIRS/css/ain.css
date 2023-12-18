@@ -685,13 +685,18 @@ h1 {
     color: #C72929;
     transition: ease-in-out 0.2s;
   }
+
   .calendar-days div.current-date {
     color: var(--color-txt);
     background-color: #C72929;
     border-radius: 10%;
+      font-size: 2.5vh;
   }
   .calendar-days div.previous-date {
       color: #707070;
+  }
+  .calendar-days div.choosed-date {
+      color: #C72929;
   }
   /*.month-list {*/
   /*    display: none;*/
