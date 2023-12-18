@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "{% static 'STATICFILES_DIRS/css/ain.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
@@ -338,7 +339,8 @@
     dateFormate.classList.remove('showtime');
     dateFormate.classList.add('hideTime');
   };
-
+let dates = {};
+let k = 0;
   const generateCalendar = (month, year) => {
     let calendar_days = document.querySelector('.calendar-days');
     calendar_days.innerHTML = '';
@@ -374,19 +376,27 @@
     }
 
     let book = document.querySelector('.date_book').getAttribute('data-value')
-    console.log(book)
-
+    //console.log(book)
   for (let i = 0; i <= days_of_month[month] + snd - 2; i++) {
 
       let day = document.createElement('div');
-
       if (i >= snd - 1) {
-        day.innerHTML = i - snd + 2;
+          let data = year.toString();
+          data += '-' + (month + 1).toString() + '-' + (i - snd + 2).toString();
+          //console.log(data);
+          day.setAttribute('data', data);
+          let id = 'days_of_month';
+          day.setAttribute('id', id);
+          day.setAttribute('name', data)
+          day.setAttribute('class', data)
+            day.innerHTML = i - snd + 2;
+
 
         if (i - snd + 2 === currentDate.getDate() &&
           year === currentDate.getFullYear() &&
           month === currentDate.getMonth()
         ) {
+
           day.classList.add('current-date');
 
         }
@@ -394,9 +404,11 @@
             year <= currentDate.getFullYear() &&
             month <= currentDate.getMonth()
         ) {
+
             day.classList.add('previous-date');
         }
         if(month < currentDate.getMonth() && year <= currentDate.getFullYear()){
+
             day.classList.add('previous-date');
         }
         let k = 0;
@@ -415,6 +427,8 @@
                   year === y &&
                   month === m - 1
                 ) {
+
+
                   day.classList.add('previous-date');}
                 k = 0;
                 y = 0;
@@ -466,13 +480,253 @@
 
 
 
-        console.log(y, ' ', m, ' ', d0, d1)
+        //console.log(y, ' ', m, ' ', d0, d1)
 
 
         }
       }
       calendar_days.appendChild(day);
     }
+    if(Object.keys(dates).length === 2) {
+        if (dates[0].getMonth() === dates[1].getMonth()) {
+            for (let i = dates[0].getDate(); i <= dates[1].getDate(); i++) {
+                str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                el = document.querySelectorAll("#days_of_month")
+                el.forEach(i => {
+                    if (i.getAttribute('data') === str1) {
+                        i.classList.add('choosed-date');
+                    }
+                })
+            }
+        }
+
+        if(dates[0].getMonth() < dates[1].getMonth()){
+
+                    for(let i = dates[0].getDate(); i <= days_of_month[dates[0].getMonth()]; i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        console.log(str1);
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('name') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.add('choosed-date');
+
+                            }
+                        })
+                    }
+                    for(let i = 1; i <= dates[1].getDate(); i++){
+                        str1 = dates[1].getFullYear().toString() + '-' + (dates[1].getMonth() + 1).toString() + '-' + i.toString();
+
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('data') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.add('choosed-date');
+
+                            }
+                        })
+                    }
+                }
+
+        if(dates[0].getMonth() > dates[1].getMonth()){
+            for(let i = dates[0].getDate(); i <= days_of_month[dates[0].getMonth()]; i++){
+                str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                console.log(str1);
+                el = document.querySelectorAll("#days_of_month")
+                el.forEach(i => {
+                    console.log(i.getAttribute('name') ,' ', str1)
+
+                    if (i.getAttribute('name') === str1){
+                        i.classList.add('choosed-date');
+
+                    }
+                })
+            }
+            for(let i = 1; i <= dates[1].getDate(); i++){
+                str1 = dates[1].getFullYear().toString() + '-' + (dates[1].getMonth() + 1).toString() + '-' + i.toString();
+
+                el = document.querySelectorAll("#days_of_month")
+                el.forEach(i => {
+                    console.log(i.getAttribute('data') ,' ', str1)
+
+                    if (i.getAttribute('name') === str1){
+                        i.classList.add('choosed-date');
+
+                    }
+                })
+            }
+        }
+    }
+    const days = document.querySelectorAll('#days_of_month');
+        days.forEach(date => {
+           date.addEventListener('click', (evt) => {
+               const date1 = new Date(evt.target.attributes.data.nodeValue)
+                dates[k] = date1;
+
+            k++;
+            console.log(dates);
+            if(Object.keys(dates).length === 2){
+                let str1 = ""
+                if(dates[0].getMonth() === dates[1].getMonth()){
+                    for(let i = dates[0].getDate(); i <= dates[1].getDate(); i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            if (i.getAttribute('data') === str1){
+                                i.classList.add('choosed-date');
+                            }
+                        })
+                    }
+                }
+
+
+                if(dates[0].getMonth() > dates[1].getMonth()){
+
+                    for(let i = dates[0].getDate(); i <= days_of_month[dates[0].getMonth()]; i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        console.log(str1);
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('name') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.add('choosed-date');
+
+                            }
+                        })
+                    }
+                    for(let i = 1; i <= dates[1].getDate(); i++){
+                        str1 = dates[1].getFullYear().toString() + '-' + (dates[1].getMonth() + 1).toString() + '-' + i.toString();
+
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('data') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.add('choosed-date');
+
+                            }
+                        })
+                    }
+                }
+
+
+
+                if(dates[0].getMonth() < dates[1].getMonth()){
+
+                    for(let i = dates[0].getDate(); i <= days_of_month[dates[0].getMonth()]; i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        console.log(str1);
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('name') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.add('choosed-date');
+
+                            }
+                        })
+                    }
+                    for(let i = 1; i <= dates[1].getDate(); i++){
+                        str1 = dates[1].getFullYear().toString() + '-' + (dates[1].getMonth() + 1).toString() + '-' + i.toString();
+
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('data') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.add('choosed-date');
+
+                            }
+                        })
+                    }
+                }
+
+            }
+            if(k % 3 === 0){
+                if(dates[0].getMonth() === dates[1].getMonth()){
+                    for(let i = dates[0].getDate(); i <= dates[1].getDate(); i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            if (i.getAttribute('data') === str1){
+                                i.classList.remove('choosed-date');
+                            }
+                        })
+                    }
+                }
+
+
+                if(dates[0].getMonth() > dates[1].getMonth()){
+
+                    for(let i = dates[0].getDate(); i <= days_of_month[dates[0].getMonth()]; i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        console.log(str1);
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('name') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.remove('choosed-date');
+
+                            }
+                        })
+                    }
+                    for(let i = 1; i <= dates[1].getDate(); i++){
+                        str1 = dates[1].getFullYear().toString() + '-' + (dates[1].getMonth() + 1).toString() + '-' + i.toString();
+
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('data') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.remove('choosed-date');
+
+                            }
+                        })
+                    }
+                }
+
+
+
+                if(dates[0].getMonth() < dates[1].getMonth()){
+
+                    for(let i = dates[0].getDate(); i <= days_of_month[dates[0].getMonth()]; i++){
+                        str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
+                        console.log(str1);
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('name') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.remove('choosed-date');
+
+                            }
+                        })
+                    }
+                    for(let i = 1; i <= dates[1].getDate(); i++){
+                        str1 = dates[1].getFullYear().toString() + '-' + (dates[1].getMonth() + 1).toString() + '-' + i.toString();
+
+                        el = document.querySelectorAll("#days_of_month")
+                        el.forEach(i => {
+                            console.log(i.getAttribute('data') ,' ', str1)
+
+                            if (i.getAttribute('name') === str1){
+                                i.classList.remove('choosed-date');
+
+                            }
+                        })
+                    }
+                }
+                for(var i in dates) delete dates[i];
+                k = 0;
+                console.log(dates);
+            }
+
+       });
+       })
   };
 
   let month_list = calendar.querySelector('.month-list');
@@ -484,6 +738,7 @@
     month.onclick = () => {
       currentMonth.value = index;
       generateCalendar(currentMonth.value, currentYear.value);
+
       month_list.classList.replace('show', 'hide');
       dayTextFormate.classList.remove('hideTime');
       dayTextFormate.classList.add('showtime');
@@ -491,6 +746,7 @@
       timeFormate.classList.add('showtime');
       dateFormate.classList.remove('hideTime');
       dateFormate.classList.add('showtime');
+
     };
   });
 
@@ -502,12 +758,14 @@
       if(currentMonth.value > 0) {
           --currentMonth.value;
           generateCalendar(currentMonth.value, currentYear.value);
+
       }
       else{
           currentMonth.value += 11;
           --currentYear.value;
           generateCalendar(currentMonth.value, currentYear.value);
-          console.log(currentMonth.value)
+          //console.log(currentMonth.value)
+
       }
 
   }
@@ -516,25 +774,18 @@
       if(currentMonth.value < 11) {
           ++currentMonth.value;
           generateCalendar(currentMonth.value, currentYear.value);
-          console.log(currentMonth.value)
+          //console.log(currentMonth.value)
+
       }
       else{
           currentMonth.value -= 11;
-          ++currentYear.value;
+          currentYear.value++;
           generateCalendar(currentMonth.value, currentYear.value);
-          console.log(currentMonth.value)
+          //console.log(currentMonth.value)
       }
 
   }
 
-  document.querySelector('#pre-year').onclick = () => {
-    --currentYear.value;
-    generateCalendar(currentMonth.value, currentYear.value);
-  };
-  document.querySelector('#next-year').onclick = () => {
-    ++currentYear.value;
-    generateCalendar(currentMonth.value, currentYear.value);
-  };
 
   let currentDate = new Date();
   let currentMonth = { value: currentDate.getMonth() };
@@ -552,6 +803,14 @@
     weekday: 'long',
   };
     </script>
+    <script>
+
+
+
+
+
+    </script>
+
 
 </body>
 </html>
