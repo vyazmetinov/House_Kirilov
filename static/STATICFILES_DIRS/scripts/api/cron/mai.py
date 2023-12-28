@@ -41,6 +41,7 @@ def get_all_rest():
     except Exception as e:
         print(e)
 
+
 def main():
     get_all_rest()
 if __name__ == "__main__":

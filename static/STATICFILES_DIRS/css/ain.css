@@ -383,7 +383,9 @@ header {
 .upper_txt{
     padding-bottom: 1.5vh;
 }
-
+.unused{
+    color: #707070;
+}
 *,
 *::before,
 *::after {
@@ -400,10 +402,10 @@ h1 {
 .__select {
   position: absolute;
   display: flex;
-  width: 13vw;
-  height: 3vh;
+  width: 15vw;
+  height: 5vh;
   margin: 0 auto;
-  font-size: 1.2vw;
+  font-size: 1.8vw;
   z-index: 1;
   text-align: center;
 }
@@ -534,6 +536,8 @@ h1 {
 }
 
 
+
+
 :root {
     --dark-text: #C72929;
     --light-body: #f3f8fe;
@@ -569,7 +573,7 @@ h1 {
   .calendar {
     height: 42vh;
     width: max-content;
-    background-color: black;
+    background-color: rgba(0, 0, 8, 0.07);
     border-radius: 3%;
     overflow: hidden;
     padding: 3vh 2vw 0px 3vh;
@@ -842,3 +846,15 @@ h1 {
       margin: 5px 0px;
     }
   }
+
+.black_rect{
+    position: relative;
+    background-color: black;
+    width: 16vw;
+    height: max-content;
+    border-radius: 0.5vw;
+    border-color: white;
+    border: 1px solid;
+}
+
+

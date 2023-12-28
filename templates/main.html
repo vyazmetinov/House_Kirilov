@@ -5,10 +5,11 @@
 <head>
     <meta charset="utf-8" />
     <title>Home_page</title>
+    <link rel="icon" type="image/x-icon" href="static/STATICFILES_DIRS/img/favicon.jpg">
     <link rel="stylesheet" type="text/html" href="../static/STATICFILES_DIRS/css/ain.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -55,196 +56,195 @@
             scroll-behavior: smooth;
         }
     </style>
-    <div id = "first_one">
-        <div>
-            <header>
-                <a href="#second" class='nav-about'>О&nbspнас<div class="underline_a"></div></a>
-                <a href="#rasp" class="nav-item">Расположение <div class="underline_r"></div></a>
-                <a href="#book" class="nav-item">Забронировать <div class="underline_r"></div></a>
-                <a href="" class="nav-item">Отзывы<div class="underline_r"></div> </a>
-                <a href="" class="nav-item">Галерея<div class="underline_r"></div></a>
-                <a href="" class="call_number">+7&nbsp(911)&nbsp501-21-21<div class="underline_r"></div></a>
-            </header>
+    <div>
+        <header>
+            <a href="#second" class='nav-about'>О&nbspнас<div class="underline_a"></div></a>
+            <a href="#rasp" class="nav-item">Расположение <div class="underline_r"></div></a>
+            <a href="#book" class="nav-item">Забронировать <div class="underline_r"></div></a>
+            <a href="" class="nav-item">Отзывы<div class="underline_r"></div> </a>
+            <a href="" class="nav-item">Галерея<div class="underline_r"></div></a>
+            <a href="" class="call_number">+7&nbsp(911)&nbsp501-21-21<div class="underline_r"></div></a>
+        </header>
+    </div>
+    <div class="header-down">
+        <div class= "weeks">Незабываемые <br>выходные<br>на природе!
+            <div class="cirkle"></div>
         </div>
-        <div class="header-down">
-            <div class= "weeks">Незабываемые <br>выходные<br>на природе!
-                <div class="cirkle"></div>
-            </div>
-            <img src="{% static 'STATICFILES_DIRS/img/houseOutside.png' %}" alt="logo" id = "house_outside" style="width: 45vw">
+        <img src="{% static 'STATICFILES_DIRS/img/houseOutside.png' %}" alt="logo" id = "house_outside" style="width: 45vw">
+    </div>
+
+    <div class="down-header-down">
+        <img src="{% static 'STATICFILES_DIRS/img/banyaOutside.png' %}" alt="banya" id = "banya_outside" style="width: 33vw">
+        <div class = "rectanglepl">
+            <div class = "line"></div>
+            <div class = "placement">Размещение до 12 <br> человек</div>
         </div>
-
-         <div class="down-header-down">
-             <img src="{% static 'STATICFILES_DIRS/img/banyaOutside.png' %}" alt="banya" id = "banya_outside" style="width: 33vw">
-             <div class = "rectanglepl">
-                 <div class = "line"></div>
-                 <div class = "placement">Размещение до 12 <br> человек</div>
-             </div>
-             <div class = "rectanglefree">
-                 <div class = "linefree"></div>
-                 <div class = "free">Бесплатная часовая<br>экскурсия</div>
-             </div>
-         </div>
-
-        <div class="second" id="second"><p1 class="about_house">О нас</p1></div>
-
-        <div class="third">
-            <div class="sleep_sections">Спальные места:
-                <div class="block_flats">
-                    <div class="vertical_line"></div>
-                    <div class="flat1_2">
-                        <div class="str" style="padding-top: 0">На 1 этаже: диван в гостиной, полуторная кровать 120</div>
-                        <div class="str">На 2 этаже: двуспальная кровать 160, тахта на двоих, односпальная кровать, двухярусная детская кровать</div>
-                    </div>
-                </div>
-            </div>
-            <img src="/static/STATICFILES_DIRS/img/banya_inside.png" alt="banya_inside" width="642px" id="banya_inside" style="width: 32vw">
+        <div class = "rectanglefree">
+            <div class = "linefree"></div>
+            <div class = "free">Бесплатная часовая<br>экскурсия</div>
         </div>
+    </div>
 
-        <div class="forth">
-            <img src="{% static 'STATICFILES_DIRS/img/living_room.png' %}" alt="house_inside" width="642px" id="banya_inside" style="width: 34vw">
-            <div class="plot_house">Участок и дом:
-                <div class="block_flats">
-                    <div class="vertical_line_plot"></div>
-                    <div class="flat1_2">
-                        <div class="str" style="padding-top: 0">Проведена обработка от клещей</div>
-                        <div class="str">Участок 25 соток</div>
-                        <div class="str">Отапливаемый деревянный гостевой дом 100м2</div>
-                        <div class="str">Внутренняя отделка: натуральное дерево</div>
-                    </div>
+    <div class="second" id="second"><p1 class="about_house">О нас</p1></div>
+
+    <div class="third">
+        <div class="sleep_sections">Спальные места:
+            <div class="block_flats">
+                <div class="vertical_line"></div>
+                <div class="flat1_2">
+                    <div class="str" style="padding-top: 0">На 1 этаже: диван в гостиной, полуторная кровать 120</div>
+                    <div class="str">На 2 этаже: двуспальная кровать 160, тахта на двоих, односпальная кровать, двухярусная детская кровать</div>
                 </div>
             </div>
         </div>
+        <img src="/static/STATICFILES_DIRS/img/banya_inside.png" alt="banya_inside" width="642px" id="banya_inside" style="width: 32vw">
+    </div>
 
-        <div class="fifth">
-            <div class="living"> Условия и правила проживания:
-                <div class="block_flats">
-                    <div class="vertical_line_living"></div>
-                    <div class="flat1_2">
-                        Курение в доме запрещается
-                        <div class="str">При отмене бронирования менее, чем за 10 суток до <br> заезда, залог не возвращается</div>
-                        <div class="str"></divclass>Отапливаемый деревянный гостевой дом 100м<sup>2</sup> </div>
-                        <div class="str"></divclass>Шуметь после 22:00 на территории (улице) запрещается</div>
-                        <div class="str">Возможна сдача на неделю и более длительный срок.</div>
-                    </div>
+    <div class="forth">
+        <img src="{% static 'STATICFILES_DIRS/img/living_room.png' %}" alt="house_inside" width="642px" id="banya_inside" style="width: 34vw">
+        <div class="plot_house">Участок и дом:
+            <div class="block_flats">
+                <div class="vertical_line_plot"></div>
+                <div class="flat1_2">
+                    <div class="str" style="padding-top: 0">Проведена обработка от клещей</div>
+                    <div class="str">Участок 25 соток</div>
+                    <div class="str">Отапливаемый деревянный гостевой дом 100м2</div>
+                    <div class="str">Внутренняя отделка: натуральное дерево</div>
                 </div>
             </div>
-            <img src="{% static 'STATICFILES_DIRS/img/kitchen.png' %}" alt="kitchen" width="642px" id="kitchen" style="width: 33vw">
+        </div>
+    </div>
+
+    <div class="fifth">
+        <div class="living"> Условия и правила проживания:
+            <div class="block_flats">
+                <div class="vertical_line_living"></div>
+                <div class="flat1_2">
+                    Курение в доме запрещается
+                    <div class="str">При отмене бронирования менее, чем за 10 суток до <br> заезда, залог не возвращается</div>
+                    <div class="str"></divclass>Отапливаемый деревянный гостевой дом 100м<sup>2</sup> </div>
+                    <div class="str"></divclass>Шуметь после 22:00 на территории (улице) запрещается</div>
+                    <div class="str">Возможна сдача на неделю и более длительный срок.</div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'STATICFILES_DIRS/img/kitchen.png' %}" alt="kitchen" width="642px" id="kitchen" style="width: 33vw">
+    </div>
+
+    <div class="sixth">
+        <div class="icon">
+            <img src="{% static 'STATICFILES_DIRS/img/mdi_playground-seesaw.png' %}" alt="" class="img">
+            <p class="untxt">Детская&nbspплощадка</p>
+        </div>
+        <div class="icon">
+            <img src="{% static 'STATICFILES_DIRS/img/wifi.png' %}" alt="" class="img">
+            <p class="untxt">Wi&nbsp-&nbspFi</p>
+        </div>
+        <div class="icon">
+            <img src="{% static 'STATICFILES_DIRS/img/ic_outline-water-drop.png' %}" alt="" class="img">
+            <p class="untxt">Водоснабжение</p>
+        </div>
+        <div class="icon">
+            <img src="{% static 'STATICFILES_DIRS/img/outdoor_grill.png' %}" alt="" class="img">
+            <p class="untxt">Мангал</p>
+        </div>
+        <div class="icon">
+            <img src="{% static 'STATICFILES_DIRS/img/shower.png' %}" alt="" class="img">
+            <p class="untxt">Баня&nbspс&nbspжаркой<br>парилкой&nbsp(до&nbsp120°)</p>
         </div>
 
-        <div class="sixth">
-            <div class="icon">
-                <img src="{% static 'STATICFILES_DIRS/img/mdi_playground-seesaw.png' %}" alt="" class="img">
-                <p class="untxt">Детская&nbspплощадка</p>
-            </div>
-            <div class="icon">
-                <img src="{% static 'STATICFILES_DIRS/img/wifi.png' %}" alt="" class="img">
-                <p class="untxt">Wi&nbsp-&nbspFi</p>
-            </div>
-            <div class="icon">
-                <img src="{% static 'STATICFILES_DIRS/img/ic_outline-water-drop.png' %}" alt="" class="img">
-                <p class="untxt">Водоснабжение</p>
-            </div>
-            <div class="icon">
-                <img src="{% static 'STATICFILES_DIRS/img/outdoor_grill.png' %}" alt="" class="img">
-                <p class="untxt">Мангал</p>
-            </div>
-            <div class="icon">
-                <img src="{% static 'STATICFILES_DIRS/img/shower.png' %}" alt="" class="img">
-                <p class="untxt">Баня&nbspс&nbspжаркой<br>парилкой&nbsp(до&nbsp120°)</p>
-            </div>
-
-        </div>
-        <div class="rasp" id="rasp">Расположение</div>
-        <div class="under_rasp">
-            <div id="map">
-                <script>
-                  var map = L.map('map').setView([59.824217, 38.384868], 10);
-                  data={};
-                  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    </div>
+    <div class="rasp" id="rasp">Расположение</div>
+    <div class="under_rasp">
+        <div id="map">
+            <script>
+                var map = L.map('map').setView([59.824217, 38.384868], 10);
+                data={};
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '© <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
-                  }).addTo(map);
-                  var marker = L.marker([59.824217, 38.384868]);
-                  marker.addTo(map);
-                </script>
-                </div>
-            <div class="place" style="padding-left: 10vw; height: 63vh; padding-top: 10vh;">
+                }).addTo(map);
+                var marker = L.marker([59.824217, 38.384868]);
+                marker.addTo(map);
+            </script>
+        </div>
+        <div class="place" style="padding-left: 10vw; height: 63vh; padding-top: 10vh;">
 
-                <div class="place_txt">
-                    <div class="vertical_line_place"></div>
-                    <div style="display: grid; padding-left: 1vw">
-                        <div class="str">Вологодская&nbspобласть,&nbspКириллов,</div>
-                        <div class="str">улица Калачёва д.57</div>
-                        <div class="str">До Сиверского озера 250м</div>
-                        <div class="str">Рядом с Экотелем</div>
-                        <div class="str">От центра Кириллова&nbsp2,5 км</div>
-                    </div>
-
+            <div class="place_txt">
+                <div class="vertical_line_place"></div>
+                <div style="display: grid; padding-left: 1vw">
+                    <div class="str">Вологодская&nbspобласть,&nbspКириллов,</div>
+                    <div class="str">улица Калачёва д.57</div>
+                    <div class="str">До Сиверского озера 250м</div>
+                    <div class="str">Рядом с Экотелем</div>
+                    <div class="str">От центра Кириллова&nbsp2,5 км</div>
                 </div>
+
             </div>
         </div>
+    </div>
 
 
 
 
-        <div id="book">Забронировать</div>
-        <div class="under_book">
-            <div class="custom">
-                <div class="upper_txt">Конфигурация</div>
-                <form>
-                  <div class="__select" data-state="">
+    <div id="book">Забронировать</div>
+    <div class="under_book">
+        <div class="custom">
+            <div class="upper_txt">Конфигурация</div>
+            <form>
+                <div class="__select" data-state="">
                     <div class="__select__title"></div>
                     <div class="__select__content">
-                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                        <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
                         <label for="singleSelect0" tabindex="0" class="__select__label" data-value="Только дом"></label>
-                    <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                        <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
                         <label for="singleSelect1" tabindex="0" class="__select__label" data-value="Баня"></label>
-                    <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                        <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
                         <label for="singleSelect2" tabindex="0" class="__select__label" data-value="Лодка"></label>
-                    <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                        <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
                         <label for="singleSelect3" tabindex="0" class="__select__label" data-value="Баня&nbspи&nbspлодка"></label>
                     </div>
-                  </div>
-                </form>
-            </div>
-            <div class="custom">
-                <div class="upper_txt">Заезд</div>
-                <div class="under_txt">
-
                 </div>
-                <div class="contianer">
-                    <div class="date_book" style="display: none" data-value="{{date_book}}"></div>
-                      <div class="calendar">
-                        <div class="calendar-header">
-                
-                            <div class="month-picker" id="month-picker">
-                                <div class="year-change" id="pre-month">
-                                  <div><</div>
-                                </div>
-                
-                                <span id="month"> September </span>
-                                <span id="year"> 2023 </span>
-                
-                                <div class="year-change" id="next-month">
-                                  <div>></div>
-                                </div>
-                          </div>
-                
-                          <div class="year-picker" id="year-picker">
+            </form>
+        </div>
+        <div class="custom">
+            <div class="upper_txt">Заезд</div>
+            <div class="under_txt">
+
+            </div>
+            <div class="contianer">
+                <div class="date_book" style="display: none" data-value="{{date_book}}"></div>
+                <div class="calendar">
+                    <div class="calendar-header">
+
+                        <div class="month-picker" id="month-picker">
+                            <div class="year-change" id="pre-month">
+                                <div><</div>
+                            </div>
+
+                            <span id="month"> September </span>
+                            <span id="year"> 2023 </span>
+
+                            <div class="year-change" id="next-month">
+                                <div>></div>
+                            </div>
+                        </div>
+
+                        <div class="year-picker" id="year-picker">
                             <span class="year-change" id="pre-year">
                               <pre><</pre>
                             </span>
-                
+
                             <span id="year"> 2023 </span>
-                
+
                             <span class="year-change" id="next-year">
                               <pre>></pre>
                             </span>
-                
-                          </div>
+
                         </div>
-                
-                        <div class="calendar-body">
-                          <div class="calendar-week-days">
+                    </div>
+
+                    <div class="calendar-body">
+                        <div class="calendar-week-days">
                             <div>Пн</div>
                             <div>Вт</div>
                             <div>Ср</div>
@@ -252,24 +252,140 @@
                             <div>Пт</div>
                             <div>Сб</div>
                             <div>Вс</div>
-                          </div>
-                          <div class="calendar-days">
-                          </div>
                         </div>
-                        <div class="month-list"></div>
-                      </div>
+                        <div class="calendar-days">
+                        </div>
+                    </div>
+                    <div class="month-list"></div>
+                </div>
             </div>
-    </div>
-            <div class="custom">
+        </div>
+        <div class="custom">
                 <div class="upper_txt">Выезд</div>
                 <div class="under_txt">-</div>
+        </div>
+        <div class="custom">
+            <div class="upper_txt">Взрослые&nbspи&nbspдети</div>
+            <div class="under_txt">
+
+                <div class="black_rect" style="background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
+                    <div style="display: flex; padding-left: 1vw; padding-top: 1vw">
+                        <div style="display: grid">
+                            <div class="big_txt">Взрослые</div>
+                            <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 18 лет</div>
+                        </div>
+                        <div style="padding-top: 0.8vw; display: flex">
+                            <div id="minus_middle_aged" style="cursor: pointer; padding-left: 1vw">-</div>
+                            <div id="middle_aged" style="padding-left: 1vw">0</div>
+                            <div id="plus_middle_aged" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; padding-top: 2vw; padding-left: 1vw; padding-bottom: 1vw">
+                        <div style="display: grid">
+                            <div class="big_txt">Дети</div>
+                            <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 6 до 18 лет</div>
+                        </div>
+                        <div style="padding-top: 0.8vw; display: flex">
+                            <div id="minus_teen" style="cursor: pointer; padding-left: 1vw">-</div>
+                            <div id="teen" style="padding-left: 1vw">0</div>
+                            <div id="plus_teen" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="custom">
-                <div class="upper_txt">Взрослые&nbspи&nbspдети</div>
-                <div class="under_txt">-</div>
+        </div>
+
+
+    </div>
+    <div id="show_price" style="position: relative; padding-left: 45vw; padding-top: 10vw; display: flex; align-items: center">
+        <div id="that_is_all" style="font-size: 2vw; font-family: Montserrat, sans-serif; color: #FFFFFF; padding: 1vh; background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">Забронировать</div>
+        <div id="final_price" style="padding-left: 5vw; font-family: Railway, sans-serif; color: #FFFFFF; font-size: 4vw"></div>
+
+    </div>
+    <div class="that_is_all" style="padding-left: 20vw; position: absolute">
+        <div class="black_rect" style="justify-items: center; padding: 2vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
+            <div id="call" style="color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">Связаться по номеру телефона или WhatsApp</div>
+            <div class="black_rect" style="margin-top: 3vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
+                <div id="phone" style="padding:0.3vw 21vw 0.3vw; color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">+7 (911) 501-21-21</div>
+            </div>
+            <div class="black_rect" style="margin-top: 3vw;background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
+                <div id="phone" style="padding:0.3vw 25.2vw 0.3vw; color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">WhatsApp</div>
             </div>
         </div>
     </div>
+    <script>
+        const plus_middle_aged = document.querySelector('#plus_middle_aged')
+        const minus_middle_aged = document.querySelector('#minus_middle_aged')
+        const title_middle_aged = document.querySelector('#middle_aged')
+        const plus_teen= document.querySelector('#plus_teen')
+        const minus_teen = document.querySelector('#minus_teen')
+        const title_teen = document.querySelector('#teen')
+
+        let middle_aged = 0
+        minus_middle_aged.classList.add('.unused');
+        plus_middle_aged.addEventListener('click',() => {
+            middle_aged++;
+            title_middle_aged.innerHTML = middle_aged.toString();
+            title_middle_aged.setAttribute('data', middle_aged.toString());
+            minus_middle_aged.classList.remove('.unused');
+            document.querySelector('#final_price').setAttribute('middle_aged', middle_aged.toString());
+            const final_price = document.querySelector("#final_price")
+            let midle_aged = Number(final_price.getAttribute('middle_aged'));
+            let ten = Number(final_price.getAttribute('teen'));
+            let conf = Number(final_price.getAttribute('config'));
+            let day = Number(final_price.getAttribute('days'));
+            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+
+        })
+        minus_middle_aged.addEventListener('click',() => {
+            if(middle_aged === 0){
+                minus_middle_aged.classList.add('.unused');
+            }
+            middle_aged--;
+            title_middle_aged.setAttribute('data', middle_aged.toString())
+            title_middle_aged.innerHTML = middle_aged.toString();
+            document.querySelector('#final_price').setAttribute('middle_aged', middle_aged.toString());
+            const final_price = document.querySelector("#final_price")
+            let midle_aged = Number(final_price.getAttribute('middle_aged'));
+            let ten = Number(final_price.getAttribute('teen'));
+            let conf = Number(final_price.getAttribute('config'));
+            let day = Number(final_price.getAttribute('days'));
+            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+        })
+
+        let teen = 0;
+        minus_teen.classList.add('.unused');
+        plus_teen.addEventListener('click',() => {
+            teen++;
+            title_teen.setAttribute('data', teen.toString())
+            title_teen.innerHTML = teen.toString();
+            minus_teen.classList.remove('.unused');
+            document.querySelector('#final_price').setAttribute('teen', teen.toString());
+            const final_price = document.querySelector("#final_price")
+            let midle_aged = Number(final_price.getAttribute('middle_aged'));
+            let ten = Number(final_price.getAttribute('teen'));
+            let conf = Number(final_price.getAttribute('config'));
+            let day = Number(final_price.getAttribute('days'));
+            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+        })
+        minus_teen.addEventListener('click',() => {
+            if(teen === 0){
+                minus_teen.classList.add('.unused');
+            }
+            teen--;
+            title_teen.setAttribute('data', teen.toString())
+            title_teen.innerHTML = teen.toString();
+            document.querySelector('#final_price').setAttribute('teen', teen.toString());
+            const final_price = document.querySelector("#final_price")
+            let midle_aged = Number(final_price.getAttribute('middle_aged'));
+            let ten = Number(final_price.getAttribute('teen'));
+            let conf = Number(final_price.getAttribute('config'));
+            let day = Number(final_price.getAttribute('days'));
+            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+        })
+    </script>
+
     <script>
         const selectSingle = document.querySelector('.__select');
         const selectSingle_title = selectSingle.querySelector('.__select__title');
@@ -283,12 +399,48 @@
             selectSingle.setAttribute('data-state', 'active');
           }
         });
-
+        document.querySelector('#final_price').setAttribute('config', "1");
         // Close when click to option
         for (let i = 0; i < selectSingle_labels.length; i++) {
           selectSingle_labels[i].addEventListener('click', (evt) => {
             selectSingle_title.textContent = evt.target.textContent;
             selectSingle.setAttribute('data-state', '');
+            if(evt.target.getAttribute('data-value') === "Только дом"){
+                document.querySelector('#final_price').setAttribute('config', "1");
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            }
+            else if(evt.target.getAttribute('data-value') === "Баня"){
+                document.querySelector('#final_price').setAttribute('config', "1.2");
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            }
+            else if(evt.target.getAttribute('data-value') === "Лодка"){
+                document.querySelector('#final_price').setAttribute('config', "1.5");
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            }
+            else {
+                document.querySelector('#final_price').setAttribute('config', "2");
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            }
           });
         }
     </script>
@@ -324,6 +476,7 @@
     'Ноябрь',
     'Декабрь',
   ];
+
   let month_picker = document.querySelector('#month');
   const dayTextFormate = document.querySelector('.day-text-formate');
   const timeFormate = document.querySelector('.time-formate');
@@ -341,6 +494,7 @@
   };
 let dates = {};
 let k = 0;
+let price = 0;
   const generateCalendar = (month, year) => {
     let calendar_days = document.querySelector('.calendar-days');
     calendar_days.innerHTML = '';
@@ -389,7 +543,15 @@ let k = 0;
           day.setAttribute('id', id);
           day.setAttribute('name', data)
           day.setAttribute('class', data)
-            day.innerHTML = i - snd + 2;
+          qw = new Date(data)
+          qw = qw.getDay()
+          if(qw === 0 || qw === 6){
+              day.setAttribute('price', '7000');
+          }
+          else {
+              day.setAttribute('price', '5900');
+          }
+          day.innerHTML = i - snd + 2;
 
 
         if (i - snd + 2 === currentDate.getDate() &&
@@ -575,6 +737,7 @@ let k = 0;
                         el = document.querySelectorAll("#days_of_month")
                         el.forEach(i => {
                             if (i.getAttribute('data') === str1){
+                                price += Number(i.getAttribute('price'))
                                 i.classList.add('choosed-date');
                             }
                         })
@@ -590,10 +753,9 @@ let k = 0;
                         el = document.querySelectorAll("#days_of_month")
                         el.forEach(i => {
                             console.log(i.getAttribute('name') ,' ', str1)
-
                             if (i.getAttribute('name') === str1){
+                                price += Number(i.getAttribute('price'))
                                 i.classList.add('choosed-date');
-
                             }
                         })
                     }
@@ -603,8 +765,8 @@ let k = 0;
                         el = document.querySelectorAll("#days_of_month")
                         el.forEach(i => {
                             console.log(i.getAttribute('data') ,' ', str1)
-
                             if (i.getAttribute('name') === str1){
+                                price += Number(i.getAttribute('price'))
                                 i.classList.add('choosed-date');
 
                             }
@@ -624,6 +786,7 @@ let k = 0;
                             console.log(i.getAttribute('name') ,' ', str1)
 
                             if (i.getAttribute('name') === str1){
+                                price += Number(i.getAttribute('price'))
                                 i.classList.add('choosed-date');
 
                             }
@@ -635,17 +798,41 @@ let k = 0;
                         el = document.querySelectorAll("#days_of_month")
                         el.forEach(i => {
                             console.log(i.getAttribute('data') ,' ', str1)
-
                             if (i.getAttribute('name') === str1){
+                                price += Number(i.getAttribute('price'))
                                 i.classList.add('choosed-date');
 
                             }
                         })
                     }
                 }
-
+            console.log('AAAAAAAAAAAAAAAAAAAAAAAAA', price);
+                document.querySelector('#final_price').setAttribute('days', price);
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
             }
+
+
+
             if(k % 3 === 0){
+                price = 0;
+                document.querySelector('#final_price').setAttribute('days', price);
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+
+
+
+
+
+
                 if(dates[0].getMonth() === dates[1].getMonth()){
                     for(let i = dates[0].getDate(); i <= dates[1].getDate(); i++){
                         str1 = dates[0].getFullYear().toString() + '-' + (dates[0].getMonth() + 1).toString() + '-' + i.toString();
@@ -802,15 +989,10 @@ let k = 0;
     day: 'numeric',
     weekday: 'long',
   };
-    </script>
+  </script>
     <script>
-
-
-
-
+        const book = document.querySelector('#show_price');
 
     </script>
-
-
 </body>
 </html>
