@@ -2,12 +2,13 @@ body {
     background: #221F1D;
     position: relative;
     margin: 0;
-}
-#first_one{
     transform: translate(-2%, 0%);
 }
+#first_one{
+
+}
 header {
-    font-size: 2vw;
+    font-size: 1vw;
     display: flex;
     align-items: center;
     font-family: Raleway, sans-serif;
@@ -68,7 +69,7 @@ header {
     color: #FFFFFF;
     font-style: normal;
     text-decoration: none;
-    padding-left: 4vw;
+    padding-left: 37vw;
 }
 .call_number:hover .underline_r{
     stroke: #C72929;
@@ -563,7 +564,7 @@ h1 {
     width: max-content;
     height: max-content;
     position: relative;
-    display: flex;
+    display: none;
     padding: 2% 0px 0px 0px;
     justify-content: center;
     top: 10%;
@@ -746,6 +747,35 @@ h1 {
         color: #FFFFFF;
         text-align: center;
         transform: translate3d(-0.2vw, -0.2vw, 0vw);
+    }
+    .first_date{
+        font-size: 2vw!important;
+    }
+    .second_date{
+        font-size: 2vw;
+    }
+    .message{
+        font-size: 1vw;
+    }
+    .open_arrow{
+        margin-left: 2vw;
+
+        color: #FFFFFF;
+        font-size: 2vw;
+        cursor: pointer;
+        transform: rotateX(60deg);
+    }
+    .open_arrow:hover{
+        color: #C72929;
+        transition: ease-in-out 0.2s;
+    }
+    .calendar_visible{
+        display: flex;
+        transition: ease-in-out 0.2s;
+    }
+    .calendar_unvisible{
+        display: none;
+        transition: ease-in-out 0.2s;
     }
   /*.month-list > div {*/
   /*  display: grid;*/
