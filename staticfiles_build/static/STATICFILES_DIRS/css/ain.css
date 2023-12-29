@@ -466,10 +466,9 @@ h1 {
 .__select__content {
   position: absolute;
   top: 2.9vh;
-  left: 0.4vw;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 0.7vw);
+  width: 100%;
   background-color: #221F1D;
   border: 1px solid rgba(199, 204, 209, 0);
   border-top-width: 0;
@@ -479,6 +478,7 @@ h1 {
   border-bottom-right-radius: 5px;
   transition: all 0.3s ease-out;
   z-index: 1;
+    margin-top: 1.5vh;
 }
 
 .__select__content {}
@@ -506,9 +506,10 @@ h1 {
   width: 100%;
   height: 3vh;
   max-height: 0;
-  padding: 1vh 2vh;
   transition: all 0.2s ease-out;
   cursor: pointer;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
 }
 .__select__label + input + .__select__label {
   border-top: 0 solid #FFFFFF;
@@ -583,7 +584,7 @@ h1 {
     border: 1px solid #FFFFFF;
   }
   .calendar-header {
-    background: black;
+    background: rgba(0, 0, 8, 0.07);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -632,6 +633,7 @@ h1 {
     animation: to-top 1s forwards;
   }
   .month-picker {
+
     padding: 0vh 1.4vw;
     border-radius: 2%;
     cursor: pointer;
@@ -702,17 +704,49 @@ h1 {
   .calendar-days div.choosed-date {
       color: #C72929;
   }
-  /*.month-list {*/
-  /*    display: none;*/
-  /*  position: relative;*/
-  /*  left: 0;*/
-  /*  top: -50px;*/
-  /*  background-color: black;*/
-  /*  color: #ffffff;*/
-  /*  grid-template-columns: repeat(3, auto);*/
-  /*  gap: 5px;*/
-  /*  border-radius: 20px;*/
-  /*}*/
+  .month-list {
+      display: none;
+    }
+  .that_is_all{
+      display: none;
+  }
+  .visible{
+      top: 85%;
+      display: block;
+      position: absolute;
+      transition: ease-in-out 0.2s !important;
+      filter: blur(0px) !important;
+  }
+    body.blur-all > *{
+        filter: blur(10px);
+        transition: ease-in-out 0.2s;
+    }
+
+    .mem{
+        font-family: Raleway, sans-serif;
+        font-size: 1.5vw;
+        color: #FFFFFF;
+        margin-top: 1vw;
+    }
+    .cirkle_close{
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 97%;
+        top: -4%;
+        height: 3vw;
+        width: 3vw;
+        border-radius: 50%;
+        background: #707070;
+
+    }
+    .close{
+        position: relative;
+        rotate: 45deg;
+        font-size: 3vw;
+        color: #FFFFFF;
+        text-align: center;
+        transform: translate3d(-0.2vw, -0.2vw, 0vw);
+    }
   /*.month-list > div {*/
   /*  display: grid;*/
   /*  place-content: center;*/
@@ -857,4 +891,11 @@ h1 {
     border: 1px solid;
 }
 
-
+.plusorminus{
+    cursor: pointer;
+    padding-left: 1vw
+}
+.plusorminus:hover{
+    color: #C72929;
+    transition: all 0.2s ease-in-out;
+}

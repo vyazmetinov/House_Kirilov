@@ -56,6 +56,7 @@
             scroll-behavior: smooth;
         }
     </style>
+    <div class="container">
     <div>
         <header>
             <a href="#second" class='nav-about'>О&nbspнас<div class="underline_a"></div></a>
@@ -208,6 +209,7 @@
         </div>
         <div class="custom">
             <div class="upper_txt">Заезд</div>
+
             <div class="under_txt">
 
             </div>
@@ -275,9 +277,9 @@
                             <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 18 лет</div>
                         </div>
                         <div style="padding-top: 0.8vw; display: flex">
-                            <div id="minus_middle_aged" style="cursor: pointer; padding-left: 1vw">-</div>
+                            <div id="minus_middle_aged" class="plusorminus" style="cursor: pointer; padding-left: 1vw">-</div>
                             <div id="middle_aged" style="padding-left: 1vw">0</div>
-                            <div id="plus_middle_aged" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
+                            <div id="plus_middle_aged" class="plusorminus" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
                         </div>
                     </div>
 
@@ -287,9 +289,9 @@
                             <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 6 до 18 лет</div>
                         </div>
                         <div style="padding-top: 0.8vw; display: flex">
-                            <div id="minus_teen" style="cursor: pointer; padding-left: 1vw">-</div>
+                            <div id="minus_teen" class="plusorminus" style="cursor: pointer; padding-left: 1vw">-</div>
                             <div id="teen" style="padding-left: 1vw">0</div>
-                            <div id="plus_teen" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
+                            <div id="plus_teen" class="plusorminus" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
                         </div>
                     </div>
                 </div>
@@ -303,8 +305,12 @@
         <div id="final_price" style="padding-left: 5vw; font-family: Railway, sans-serif; color: #FFFFFF; font-size: 4vw"></div>
 
     </div>
+</div>
     <div class="that_is_all" style="padding-left: 20vw; position: absolute">
         <div class="black_rect" style="justify-items: center; padding: 2vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
+            <div class="cirkle_close">
+                <div class="close">+</div>
+            </div>
             <div id="call" style="color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">Связаться по номеру телефона или WhatsApp</div>
             <div class="black_rect" style="margin-top: 3vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
                 <div id="phone" style="padding:0.3vw 21vw 0.3vw; color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">+7 (911) 501-21-21</div>
@@ -312,6 +318,7 @@
             <div class="black_rect" style="margin-top: 3vw;background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
                 <div id="phone" style="padding:0.3vw 25.2vw 0.3vw; color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">WhatsApp</div>
             </div>
+            <div class="mem">Пожалуйста, сообщите итоговую стоимость, дату поездки и количество проживающих</div>
         </div>
     </div>
     <script>
@@ -992,7 +999,16 @@ let price = 0;
   </script>
     <script>
         const book = document.querySelector('#show_price');
+        book.addEventListener('click', () => {
 
+            $("body").addClass("blur-all");
+           document.querySelector('.that_is_all').classList.toggle('visible')
+        })
+        document.querySelector('.cirkle_close').addEventListener('click', ()=>{
+            $("body").removeClass("blur-all");
+            document.querySelector('.that_is_all').classList.remove('visible')
+        })
     </script>
+
 </body>
 </html>
