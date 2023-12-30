@@ -20,6 +20,7 @@
 
     .container {
         display: grid;
+        justify-content: space-between;
         justify-items: center;
     }
 
@@ -92,10 +93,11 @@
 
     .header-down {
         position: relative;
-        padding-top: 8vh;
+        /* padding-top: 8vh; */
         align-content: center;
         min-height: 23vh;
         display: flex;
+        align-items: center;
     }
 
     .weeks {
@@ -105,8 +107,8 @@
         font-weight: 700;
         line-height: 134.523%; /* 80.714px */
         letter-spacing: 0.3vw;
-        padding-right: 9vw;
-        padding-top: 10vh;
+        padding-right: 4vw;
+        /* padding-top: 10vh; */
     }
 
     .cirkle {
@@ -132,11 +134,12 @@
     #banya_outside {
         flex-shrink: 0;
         margin-right: 3vw;
+        width: 35vw;
     }
 
     .rectanglepl {
-        width: 21vw;
-        height: 33vh;
+        width: 20vw;
+        height: 17vw;
         flex-shrink: 0;
         border-radius: 9%;
         border: 0.17vw solid #C72929;
@@ -156,7 +159,7 @@
 
     .line {
         position: relative;
-        top: 95%;
+        top: 65%;
         left: 12.5%;
         width: 15.5vw;
         height: 0;
@@ -168,8 +171,8 @@
     }
 
     .rectanglefree {
-        width: 21vw;
-        height: 33vh;
+        width: 20vw;
+        height: 17vw;
         flex-shrink: 0;
         border-radius: 9%;
         border: 0.17vw solid #ffffff;
@@ -188,7 +191,7 @@
 
     .linefree {
         position: relative;
-        top: 95%;
+        top: 65%;
         left: 12.5%;
         width: 15.5vw;
         height: 0;
@@ -228,9 +231,9 @@
 
     .sleep_sections {
         font-family: Raleway, sans-serif;
-        font-size: 2vw;
+        font-size: 3vw;
         color: #FFFFFF;
-        margin-right: 11.7vw;
+        margin-right: 15vw;
         letter-spacing: 0.05vw;
     }
 
@@ -250,12 +253,12 @@
 
     .flat1_2 {
         padding-left: 1vw;
-        width: 37vw;
+        width: 31vw;
     }
 
     .forth {
         position: relative;
-        padding-top: 5vh;
+        padding-top: 3vh;
         min-height: auto;
         display: flex;
         align-items: center;
@@ -266,7 +269,7 @@
         font-size: 2vw;
         letter-spacing: 0.05vw;
         color: #FFFFFF;
-        padding-left: 21vw;
+        padding-left: 15vw;
         display: grid;
     }
 
@@ -292,7 +295,7 @@
         letter-spacing: 0.05vw;
         color: #FFFFFF;
         font-weight: 400;
-        padding-right: 11vw;
+        padding-right: 14vw;
     }
 
     .vertical_line_living {
@@ -360,19 +363,32 @@
         text-align: left;
         letter-spacing: 0.15vw;
         padding-left: 12vw;
-        height: 63vh;
-        padding-top: 10vh;
+        /* height: 63vh; */
+        /* padding-top: 10vh; */
+        align-items: center;
     }
     .hui{
-        padding-left: 10vw;
-        height: 63vh;
-        padding-top: 10vh;
+        padding-left: 1vw;
+        /* height: 33vh; */
+        /* padding-top: 10vh; */
     }
     .banya_inside{
         padding-left: 10vw; height: 63vh; padding-top: 10vh;
     }
     #house_inside{
-        padding-left: 10vw; height: 63vh; padding-top: 10vh;
+        /* padding-left: 8vw; */
+        /* height: 63vh; */
+        /* padding-top: 10vh; */
+    }
+    #house_outside{
+        width: 50vw;
+        margin-top: 4vw;
+    }
+    #house_inside{
+        width: 35vw;
+    }
+    #banya_inside{
+        width: 35vw;
     }
     #map {
         position: relative;
@@ -394,13 +410,16 @@
     }
     .place_txt {
         display: flex;
-        padding-left: 1vw;
-        height: 30vh;
+        /* padding-left: 1vw; */
+        /* height: 30vh; */
+        align-items: center;
     }
-
+    #kitchen{
+        width: 35vw;
+    }
     .vertical_line_place {
         position: relative;
-        height: 30vh;
+        height: 23vh;
         width: 0;
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
