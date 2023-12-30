@@ -98,11 +98,11 @@
                     </div>
                 </div>
             </div>
-            <img src="/static/STATICFILES_DIRS/img/banya_inside.png" alt="banya_inside" width="642px" id="banya_inside" style="width: 32vw">
+            <img src="/static/STATICFILES_DIRS/img/banya_inside.png" alt="banya_inside" id="banya_inside">
         </div>
 
         <div class="forth">
-            <img src="{% static 'STATICFILES_DIRS/img/living_room.png' %}" alt="house_inside" width="642px" id="house_inside">
+            <img src="{% static 'STATICFILES_DIRS/img/living_room.png' %}" alt="house_inside" id="house_inside">
             <div class="plot_house">Участок и дом:
                 <div class="block_flats">
                     <div class="vertical_line_plot"></div>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <img src="{% static 'STATICFILES_DIRS/img/kitchen.png' %}" alt="kitchen" width="642px" id="kitchen">
+            <img src="{% static 'STATICFILES_DIRS/img/kitchen.png' %}" alt="kitchen" id="kitchen">
         </div>
 
         <div class="sixth">
@@ -271,15 +271,15 @@
             </div>
             <div class="custom">
                 <div class="upper_txt">Взрослые&nbspи&nbspдети</div>
-                <div class="under_txt">
+                <div class="under_txt" style="display: grid">
 
                     <div class="black_rect1">
-                        <div class="pizda" style="display: grid; padding-left: 1vw; padding-top: 1vw; padding-bottom: 1vw">
+                        <div class="pizda">
                             <div class="vagina">
                                 <div class="big_txt">Взрослые</div>
                                 <div class="small_txt">от 18 лет</div>
                             </div>
-                            <div style="display: grid">
+                            <div class="vagina">
                                 <div class="big_txt">Дети</div>
                                 <div class="small_txt">от 6 до 18 лет</div>
                             </div>
@@ -287,7 +287,7 @@
 
                         <div class='nechto'>
                             <div class="nechto1">
-                                <div id="minus_middle_aged" class="minus" >-</div>
+                                <div id="minus_middle_aged" class="minus">-</div>
                                 <div id="middle_aged">0</div>
                                 <div id="plus_middle_aged" class="plus">+</div>
                             </div>
