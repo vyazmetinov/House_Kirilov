@@ -1732,11 +1732,13 @@
         display: grid;
         color: #FFFFFF;
         grid-template-columns: repeat(2, 2fr);
+        left: 12vw;
+        column-gap: 15vw;
     }
 
     .custom {
         width: 42.6vw;
-        font-size: 3vw;
+        font-size: 5vw;
         font-family: Roboto, sans-serif;
     }
 
@@ -1765,7 +1767,7 @@
     .__select {
         position: relative;
         display: flex;
-        width: 21vw;
+        width: 33vw;
         height: 4vw;
         font-size: 2.4vw;
         margin-bottom: 1vw;
@@ -2025,12 +2027,18 @@
     }
 
     .month-picker {
-padding: 0vh 0vw;
-border-radius: 2%;
-cursor: pointer;
-display: flex;
-transform: translateY(-5vh);
-}
+
+        padding: 0vh 0vw;
+
+        border-radius: 2%;
+
+        cursor: pointer;
+
+        display: flex;
+
+        transform: translateY(-5vh);
+
+}
 
     #month {
         padding-top: 3vh;
@@ -2168,7 +2176,7 @@
         /* position: relative; */
         transition: ease-in-out 0.2s !important;
         filter: blur(0px) !important;
-        left: 20%;
+        left: 10%;
         /* justify-content: center; */
     }
 
@@ -2380,7 +2388,7 @@
         background-color: rgba(0,0,8,0.3);
         border-radius: 0.5vw;
         height: max-content;
-        width: 26vw;
+        width: 43vw;
         border: 1px solid #FFFFFF;
         display: flex;
     }
@@ -2403,7 +2411,7 @@
     }
     .nechto{
         display: grid;
-        padding-left: 7vw;
+        padding-left: 21vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
         justify-items: end
@@ -2563,5 +2571,11 @@
         display: grid;
         transition: ease-in-out 0.2s !important;
         filter: blur(0px) !important;
+    }
+    .reverse_right{
+        transform: translateX(134%);
+    }
+    .reverse_left{
+        transform: translateX(-135%);
     }
 }
