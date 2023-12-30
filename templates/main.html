@@ -71,18 +71,18 @@
             <div class= "weeks">Незабываемые <br>выходные<br>на природе!
                 <div class="cirkle"></div>
             </div>
-            <img src="{% static 'STATICFILES_DIRS/img/houseOutside.png' %}" alt="logo" id = "house_outside" style="width: 45vw">
+            <img src="{% static 'STATICFILES_DIRS/img/houseOutside.png' %}" alt="logo" id = "house_outside">
         </div>
 
         <div class="down-header-down">
-            <img src="{% static 'STATICFILES_DIRS/img/banyaOutside.png' %}" alt="banya" id = "banya_outside" style="width: 33vw">
+            <img src="{% static 'STATICFILES_DIRS/img/banyaOutside.png' %}" alt="banya" id="banya_outside">
             <div class = "rectanglepl">
-                <div class = "line"></div>
                 <div class = "placement">Размещение до 12 <br> человек</div>
+                <div class = "line"></div>
             </div>
             <div class = "rectanglefree">
-                <div class = "linefree"></div>
                 <div class = "free">Бесплатная часовая<br>экскурсия</div>
+                <div class = "linefree"></div>
             </div>
         </div>
 
@@ -102,7 +102,7 @@
         </div>
 
         <div class="forth">
-            <img src="{% static 'STATICFILES_DIRS/img/living_room.png' %}" alt="house_inside" width="642px" id="banya_inside" style="width: 34vw; padding-left: 5.6vw">
+            <img src="{% static 'STATICFILES_DIRS/img/living_room.png' %}" alt="house_inside" width="642px" id="house_inside">
             <div class="plot_house">Участок и дом:
                 <div class="block_flats">
                     <div class="vertical_line_plot"></div>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <img src="{% static 'STATICFILES_DIRS/img/kitchen.png' %}" alt="kitchen" width="642px" id="kitchen" style="width: 33vw">
+            <img src="{% static 'STATICFILES_DIRS/img/kitchen.png' %}" alt="kitchen" width="642px" id="kitchen">
         </div>
 
         <div class="sixth">
@@ -168,11 +168,11 @@
                     marker.addTo(map);
                 </script>
             </div>
-            <div class="place" style="padding-left: 10vw; height: 63vh; padding-top: 10vh;">
+            <div class="place">
 
                 <div class="place_txt">
                     <div class="vertical_line_place"></div>
-                    <div style="display: grid; padding-left: 1vw">
+                    <div class="hui">
                         <div class="str">Вологодская&nbspобласть,&nbspКириллов,</div>
                         <div class="str">улица Калачёва д.57</div>
                         <div class="str">До Сиверского озера 250м</div>
@@ -210,12 +210,12 @@
             <div class="custom">
                 <div class="upper_txt">Заезд</div>
 
-                <div class="under_txt" style="display: flex; align-items: center">
+                <div class="under_txt">
                         <div class="first_date"> - </div>
                         <div class="open_arrow"> &#8744 </div>
                 </div>
                 <div class="contianer">
-                    <div class="date_book" style="display: none" data-value="{{date_book}}"></div>
+                    <div class="date_book" data-value="{{date_book}}"></div>
                     <div class="calendar">
                         <div class="calendar-header">
 
@@ -273,28 +273,28 @@
                 <div class="upper_txt">Взрослые&nbspи&nbspдети</div>
                 <div class="under_txt">
 
-                    <div class="black_rect" style="background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: 20vw; border: 1px solid #FFFFFF; display: flex">
-                        <div style="display: grid; padding-left: 1vw; padding-top: 1vw; padding-bottom: 1vw">
-                            <div style="display: grid; padding-bottom: 0.5vw">
+                    <div class="black_rect1">
+                        <div class="pizda" style="display: grid; padding-left: 1vw; padding-top: 1vw; padding-bottom: 1vw">
+                            <div class="vagina">
                                 <div class="big_txt">Взрослые</div>
-                                <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 18 лет</div>
+                                <div class="small_txt">от 18 лет</div>
                             </div>
                             <div style="display: grid">
                                 <div class="big_txt">Дети</div>
-                                <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 6 до 18 лет</div>
+                                <div class="small_txt">от 6 до 18 лет</div>
                             </div>
                         </div>
 
-                        <div style="display: grid;padding-left: 1vw;padding-top: 1vw; padding-bottom: 1vw; justify-items: end">
-                            <div style="margin-left: 2vw; padding-top: 0.8vw; display: flex">
-                                <div id="minus_middle_aged" class="plusorminus" style="cursor: pointer; padding-left: 1vw">-</div>
-                                <div id="middle_aged" style="padding-left: 1vw">0</div>
-                                <div id="plus_middle_aged" class="plusorminus" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
+                        <div class='nechto'>
+                            <div class="nechto1">
+                                <div id="minus_middle_aged" class="minus" >-</div>
+                                <div id="middle_aged">0</div>
+                                <div id="plus_middle_aged" class="plus">+</div>
                             </div>
-                            <div style="margin-left: 2.7vw; padding-top: 0.8vw; display: flex">
-                                <div id="minus_teen" class="plusorminus" style="cursor: pointer; padding-left: 1vw">-</div>
-                                <div id="teen" style="padding-left: 1vw">0</div>
-                                <div id="plus_teen" class="plusorminus" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
+                            <div class="nechto2">
+                                <div id="minus_teen" class="minus">-</div>
+                                <div id="teen">0</div>
+                                <div id="plus_teen" class="plus">+</div>
                             </div>
                         </div>
                     <div>
@@ -308,23 +308,23 @@
     </div>
     </div>
         </div>
-    <div id="show_price" style="position: relative; padding-top: 10vw; display: flex; align-items: center">
-        <div id="that_is_all" style="font-size: 2vw; font-family: Montserrat, sans-serif; color: #FFFFFF; padding: 1vh; background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">Забронировать</div>
-        <div id="final_price" style="padding-left: 5vw; font-family: Railway, sans-serif; color: #FFFFFF; font-size: 4vw"></div>
+    <div id="show_price">
+        <div id="that_is_all">Забронировать</div>
+        <div id="final_price"></div>
 
     </div>
 </div>
-    <div class="that_is_all" style="position: absolute; left: 10vw">
-        <div class="black_rect" style="justify-items: center; padding: 2vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: 80vw; border: 1px solid #FFFFFF; display: grid">
+    <div class="that_is_all">
+        <div class="black_rect2">
             <div class="cirkle_close" id="inf">
                 <div class="close">+</div>
             </div>
-            <div id="call" style="color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">Связаться по номеру телефона или WhatsApp</div>
-            <div class="black_rect" style="margin-top: 3vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
-                <div id="phone" style="padding:0.3vw 21vw 0.3vw; color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">+7 (911) 501-21-21</div>
+            <div id="call">Связаться по номеру телефона или WhatsApp</div>
+            <div class="black_rect3">
+                <div id="phone" >+7 (911) 501-21-21</div>
             </div>
-            <div class="black_rect" style="margin-top: 3vw;background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
-                <div id="phone" style="padding:0.3vw 25.2vw 0.3vw; color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">WhatsApp</div>
+            <div class="black_rect4">
+                <div id="phone1">WhatsApp</div>
             </div>
             <div class="mem">Пожалуйста, сообщите итоговую стоимость, дату поездки и количество проживающих</div>
         </div>
