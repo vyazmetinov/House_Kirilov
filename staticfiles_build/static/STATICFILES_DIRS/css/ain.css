@@ -230,7 +230,7 @@
 
     .sleep_sections {
         font-family: Raleway, sans-serif;
-        font-size: 3vw;
+        font-size: 2vw;
         color: #FFFFFF;
         margin-right: 15vw;
         letter-spacing: 0.05vw;
@@ -1285,7 +1285,7 @@
         color: #FFFFFF;
         font-size: 4vw
     }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1081px) {
     body {
         background: #221F1D;
         position: relative;
