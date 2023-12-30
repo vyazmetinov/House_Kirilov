@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +63,7 @@
                 <a href="#rasp" class="nav-item">Расположение <div class="underline_r"></div></a>
                 <a href="#book" class="nav-item">Забронировать <div class="underline_r"></div></a>
                 <a href="" class="nav-item">Отзывы<div class="underline_r"></div> </a>
-                <a href="" class="nav-item">Галерея<div class="underline_r"></div></a>
+                <div class="nav-item" id="gallery">Галерея<div class="underline_r"></div></div>
                 <a href="" class="call_number">+7&nbsp(911)&nbsp501-21-21<div class="underline_r"></div></a>
             </header>
         </div>
@@ -273,23 +273,23 @@
                 <div class="upper_txt">Взрослые&nbspи&nbspдети</div>
                 <div class="under_txt">
 
-                    <div class="black_rect" style="background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
-                        <div style="display: flex; padding-left: 1vw; padding-top: 1vw">
-                            <div style="display: grid">
+                    <div class="black_rect" style="background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: 20vw; border: 1px solid #FFFFFF; display: flex">
+                        <div style="display: grid; padding-left: 1vw; padding-top: 1vw; padding-bottom: 1vw">
+                            <div style="display: grid; padding-bottom: 0.5vw">
                                 <div class="big_txt">Взрослые</div>
                                 <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 18 лет</div>
                             </div>
+                            <div style="display: grid">
+                                <div class="big_txt">Дети</div>
+                                <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 6 до 18 лет</div>
+                            </div>
+                        </div>
+
+                        <div style="display: grid;padding-left: 1vw;padding-top: 1vw; padding-bottom: 1vw; justify-items: end">
                             <div style="margin-left: 2vw; padding-top: 0.8vw; display: flex">
                                 <div id="minus_middle_aged" class="plusorminus" style="cursor: pointer; padding-left: 1vw">-</div>
                                 <div id="middle_aged" style="padding-left: 1vw">0</div>
                                 <div id="plus_middle_aged" class="plusorminus" style="cursor: pointer; padding-left: 1vw; padding-right: 1vw">+</div>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; padding-top: 2vw; padding-left: 1vw; padding-bottom: 1vw">
-                            <div style="display: grid">
-                                <div class="big_txt">Дети</div>
-                                <div class="small_txt" style="font-size: 2vh; color: #C9C9C9">от 6 до 18 лет</div>
                             </div>
                             <div style="margin-left: 2.7vw; padding-top: 0.8vw; display: flex">
                                 <div id="minus_teen" class="plusorminus" style="cursor: pointer; padding-left: 1vw">-</div>
@@ -308,15 +308,15 @@
     </div>
     </div>
         </div>
-    <div id="show_price" style="position: relative; padding-left: 45vw; padding-top: 10vw; display: flex; align-items: center">
+    <div id="show_price" style="position: relative; padding-top: 10vw; display: flex; align-items: center">
         <div id="that_is_all" style="font-size: 2vw; font-family: Montserrat, sans-serif; color: #FFFFFF; padding: 1vh; background-color: rgba(0,0,8,0.3); border-radius:  0.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">Забронировать</div>
         <div id="final_price" style="padding-left: 5vw; font-family: Railway, sans-serif; color: #FFFFFF; font-size: 4vw"></div>
 
     </div>
 </div>
-    <div class="that_is_all" style="padding-left: 20vw; position: absolute">
-        <div class="black_rect" style="justify-items: center; padding: 2vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: max-content; border: 1px solid #FFFFFF; display: grid">
-            <div class="cirkle_close">
+    <div class="that_is_all" style="position: absolute; left: 10vw">
+        <div class="black_rect" style="justify-items: center; padding: 2vw; background-color: rgba(0,0,8,0.3); border-radius:  2.5vw; height: max-content; width: 80vw; border: 1px solid #FFFFFF; display: grid">
+            <div class="cirkle_close" id="inf">
                 <div class="close">+</div>
             </div>
             <div id="call" style="color: #FFFFFF; font-size: 3vw; font-family: Railway, sans-serif">Связаться по номеру телефона или WhatsApp</div>
@@ -329,6 +329,49 @@
             <div class="mem">Пожалуйста, сообщите итоговую стоимость, дату поездки и количество проживающих</div>
         </div>
     </div>
+    <div class="gallery_background">
+        <div class="cirkle_close" id="gal">
+                <div class="close">+</div>
+            </div>
+        <div class="choosed-img">
+            <button id="prev-img" class="img-button material-symbols-rounded">chevron_left</button>
+            <img src="{% static "STATICFILES_DIRS/img/IMG_2304.jpg"%}" alt="img-1" class="choose_img">
+            <button id="next-img" class="img-button material-symbols-rounded">chevron_right</button>
+        </div>
+        <div class="cont">
+            <div class="slider-wrapper">
+
+                <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+                <div class="image-list">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2304.jpg"%}" alt="1" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2307.jpg"%}" alt="2" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2308.jpg"%}" alt="3" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2310.jpg"%}" alt="4" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2312.jpg"%}" alt="5" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2316.jpg"%}" alt="6" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2317.jpg"%}" alt="7" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2318.jpg"%}" alt="8" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2319.jpg"%}" alt="9" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2320.jpg"%}" alt="10" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2322.jpg"%}" alt="11" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2323.jpg"%}" alt="12" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2324.jpg"%}" alt="13" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2325.jpg"%}" alt="14" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2326.jpg"%}" alt="15" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2327.jpg"%}" alt="16" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2328.jpg"%}" alt="17" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2331.jpg"%}" alt="18" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2332.jpg"%}" alt="19" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2334.jpg"%}" alt="20" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2336.jpg"%}" alt="21" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2337.jpg"%}" alt="22" class="img-items">
+                    <img src="{% static "STATICFILES_DIRS/img/IMG_2341.jpg"%}" alt="23" class="img-items">
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         const plus_middle_aged = document.querySelector('#plus_middle_aged')
         const minus_middle_aged = document.querySelector('#minus_middle_aged')
@@ -350,7 +393,13 @@
             let ten = Number(final_price.getAttribute('teen'));
             let conf = Number(final_price.getAttribute('config'));
             let day = Number(final_price.getAttribute('days'));
-            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            let kolichestvo = Number(final_price.getAttribute('k'));
+            if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+            }
+            else{
+                final_price.innerHTML = (day).toString() + '&#8381';
+            }
 
         })
         minus_middle_aged.addEventListener('click',() => {
@@ -366,7 +415,13 @@
             let ten = Number(final_price.getAttribute('teen'));
             let conf = Number(final_price.getAttribute('config'));
             let day = Number(final_price.getAttribute('days'));
-            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            let kolichestvo = Number(final_price.getAttribute('k'));
+            if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+            }
+            else{
+                final_price.innerHTML = (day).toString() + '&#8381';
+            }
         })
 
         let teen = 0;
@@ -382,7 +437,13 @@
             let ten = Number(final_price.getAttribute('teen'));
             let conf = Number(final_price.getAttribute('config'));
             let day = Number(final_price.getAttribute('days'));
-            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            let kolichestvo = Number(final_price.getAttribute('k'));
+            if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+            }
+            else{
+                final_price.innerHTML = (day).toString() + '&#8381';
+            }
         })
         minus_teen.addEventListener('click',() => {
             if(teen === 0){
@@ -397,7 +458,14 @@
             let ten = Number(final_price.getAttribute('teen'));
             let conf = Number(final_price.getAttribute('config'));
             let day = Number(final_price.getAttribute('days'));
-            final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+            let kolichestvo = Number(final_price.getAttribute('k'));
+            if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+            }
+            else{
+                final_price.innerHTML = (day).toString() + '&#8381';
+            }
+
         })
     </script>
 
@@ -421,31 +489,49 @@
             selectSingle_title.textContent = evt.target.textContent;
             selectSingle.setAttribute('data-state', '');
             if(evt.target.getAttribute('data-value') === "Только дом"){
+                document.querySelector('#final_price').setAttribute('config', "0");
+                const final_price = document.querySelector("#final_price")
+                let midle_aged = Number(final_price.getAttribute('middle_aged'));
+                let ten = Number(final_price.getAttribute('teen'));
+                let conf = Number(final_price.getAttribute('config'));
+                let day = Number(final_price.getAttribute('days'));
+                let kolichestvo = Number(final_price.getAttribute('k'));
+                if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+            }
+            else{
+                final_price.innerHTML = (day).toString() + '&#8381';
+            }
+            }
+            else if(evt.target.getAttribute('data-value') === "Баня"){
                 document.querySelector('#final_price').setAttribute('config', "1");
                 const final_price = document.querySelector("#final_price")
                 let midle_aged = Number(final_price.getAttribute('middle_aged'));
                 let ten = Number(final_price.getAttribute('teen'));
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
-                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
-            }
-            else if(evt.target.getAttribute('data-value') === "Баня"){
-                document.querySelector('#final_price').setAttribute('config', "1.2");
-                const final_price = document.querySelector("#final_price")
-                let midle_aged = Number(final_price.getAttribute('middle_aged'));
-                let ten = Number(final_price.getAttribute('teen'));
-                let conf = Number(final_price.getAttribute('config'));
-                let day = Number(final_price.getAttribute('days'));
-                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+                let kolichestvo = Number(final_price.getAttribute('k'));
+                if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                }
+                else{
+                    final_price.innerHTML = (day).toString() + '&#8381';
+                }
             }
             else if(evt.target.getAttribute('data-value') === "Лодка"){
-                document.querySelector('#final_price').setAttribute('config', "1.5");
+                document.querySelector('#final_price').setAttribute('config', "1");
                 const final_price = document.querySelector("#final_price")
                 let midle_aged = Number(final_price.getAttribute('middle_aged'));
                 let ten = Number(final_price.getAttribute('teen'));
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
-                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+                let kolichestvo = Number(final_price.getAttribute('k'));
+                if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                }
+                else{
+                    final_price.innerHTML = (day).toString() + '&#8381';
+                }
             }
             else {
                 document.querySelector('#final_price').setAttribute('config', "2");
@@ -454,7 +540,13 @@
                 let ten = Number(final_price.getAttribute('teen'));
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
-                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+                let kolichestvo = Number(final_price.getAttribute('k'));
+                if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                }
+                else{
+                    final_price.innerHTML = (day).toString() + '&#8381';
+                }
             }
           });
         }
@@ -510,6 +602,7 @@
 let dates = {};
 let k = 0;
 let price = 0;
+let kol = 0
   const generateCalendar = (month, year) => {
     let calendar_days = document.querySelector('.calendar-days');
     calendar_days.innerHTML = '';
@@ -561,11 +654,12 @@ let price = 0;
           qw = new Date(data)
           qw = qw.getDay()
           if(qw === 0 || qw === 6){
-              day.setAttribute('price', '7000');
+              day.setAttribute('price', '7500');
           }
           else {
-              day.setAttribute('price', '5900');
+              day.setAttribute('price', '5000');
           }
+          day.setAttribute('k', '1');
           day.innerHTML = i - snd + 2;
 
 
@@ -757,6 +851,7 @@ let price = 0;
                         el.forEach(i => {
                             if (i.getAttribute('data') === str1){
                                 price += Number(i.getAttribute('price'))
+                                kol += 1;
                                 i.classList.add('choosed-date');
                             }
                         })
@@ -774,6 +869,7 @@ let price = 0;
                             console.log(i.getAttribute('name') ,' ', str1)
                             if (i.getAttribute('name') === str1){
                                 price += Number(i.getAttribute('price'))
+                                kol += 1;
                                 i.classList.add('choosed-date');
                             }
                         })
@@ -786,6 +882,7 @@ let price = 0;
                             console.log(i.getAttribute('data') ,' ', str1)
                             if (i.getAttribute('name') === str1){
                                 price += Number(i.getAttribute('price'))
+                                kol += 1;
                                 i.classList.add('choosed-date');
 
                             }
@@ -806,6 +903,7 @@ let price = 0;
 
                             if (i.getAttribute('name') === str1){
                                 price += Number(i.getAttribute('price'))
+                                kol += 1;
                                 i.classList.add('choosed-date');
 
                             }
@@ -819,6 +917,7 @@ let price = 0;
                             console.log(i.getAttribute('data') ,' ', str1)
                             if (i.getAttribute('name') === str1){
                                 price += Number(i.getAttribute('price'))
+                                kol += 1;
                                 i.classList.add('choosed-date');
 
                             }
@@ -827,27 +926,42 @@ let price = 0;
                 }
             console.log('AAAAAAAAAAAAAAAAAAAAAAAAA', price);
                 document.querySelector('#final_price').setAttribute('days', price);
+                document.querySelector('#final_price').setAttribute('k', kol);
                 const final_price = document.querySelector("#final_price")
                 let midle_aged = Number(final_price.getAttribute('middle_aged'));
                 let ten = Number(final_price.getAttribute('teen'));
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
-                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+                let kolichestvo = Number(final_price.getAttribute('k'));
+                if((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000).toString() + '&#8381';
+                }
+                else{
+                    final_price.innerHTML = (day).toString() + '&#8381';
+                }
             }
 
 
 
             if(k % 3 === 0){
                 price = 0;
+                kol = 0;
                 document.querySelector('.first_date').innerHTML = " - ";
                 document.querySelector('.second_date').innerHTML = " - ";
                 document.querySelector('#final_price').setAttribute('days', price);
+                document.querySelector('#final_price').setAttribute('k', kol);
                 const final_price = document.querySelector("#final_price")
                 let midle_aged = Number(final_price.getAttribute('middle_aged'));
                 let ten = Number(final_price.getAttribute('teen'));
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
-                final_price.innerHTML = (day + conf + ten + midle_aged).toString() + '&#8381';
+                let kolichestvo = Number(final_price.getAttribute('k'));
+                if((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000).toString() + '&#8381';
+                }
+                else{
+                    final_price.innerHTML = (day).toString() + '&#8381';
+                }
 
 
 
@@ -1012,20 +1126,114 @@ let price = 0;
   };
   </script>
     <script>
-        const book = document.querySelector('#show_price');
+        const book = document.querySelector('#that_is_all');
         book.addEventListener('click', () => {
 
             $("body").addClass("blur-all");
            document.querySelector('.that_is_all').classList.toggle('visible')
         })
-        document.querySelector('.cirkle_close').addEventListener('click', ()=>{
+        document.querySelector('#inf').addEventListener('click', ()=>{
             $("body").removeClass("blur-all");
             document.querySelector('.that_is_all').classList.remove('visible')
+            document.querySelector('.gallery_background').classList.remove('visible_gallery')
         })
         document.querySelector('.open_arrow').addEventListener('click', () => {
             document.querySelector('.contianer').classList.toggle('calendar_visible')
         })
     </script>
+    <script>
+        const init_Slider = () => {
+            const imageList = document.querySelector(".image-list");
+            const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
 
+            slideButtons.forEach(button => {
+
+                button.addEventListener("click", () => {
+                    let direction = 0;
+                    if(button.getAttribute("id") === "prev-slide"){
+                        direction = -1;
+                    }
+                    else{
+                        direction = 1;
+                    }
+                    const scrollAmount = imageList.clientWidth * direction;
+                    console.log(imageList);
+                    imageList.scrollBy({left: scrollAmount, behavior: "smooth"})
+                });
+            });
+        }
+            window.addEventListener("load", init_Slider)
+        const img_list = [
+            "static/STATICFILES_DIRS/img/IMG_2304.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2307.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2308.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2310.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2312.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2316.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2317.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2318.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2319.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2320.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2322.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2323.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2324.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2325.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2326.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2327.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2328.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2331.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2332.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2334.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2336.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2337.jpg",
+            "static/STATICFILES_DIRS/img/IMG_2341.jpg",
+        ]
+        const cur_img = document.querySelector('.choose_img')
+        const next = document.querySelector('#next-img')
+        const prev = document.querySelector('#prev-img');
+        let Numimg = 0;
+        cur_img.setAttribute('src', img_list[Numimg])
+        next.addEventListener('click', () => {
+            if(Numimg === 22){
+                Numimg = 0;
+            }
+            else {
+                Numimg++;
+            }
+            cur_img.setAttribute('src', img_list[Numimg])
+            console.log(cur_img)
+        })
+        prev.addEventListener('click', () => {
+
+            if(Numimg === 0){
+                Numimg = 22;
+            }
+            else {
+                Numimg--;
+            }
+
+            cur_img.setAttribute('src', img_list[Numimg])
+            console.log(cur_img);
+        })
+        const Allimg = document.querySelectorAll('.img-items');
+        Allimg.forEach((e) => {
+            e.addEventListener('click', () => {
+                let ind = Number(e.getAttribute('alt'));
+                Numimg = ind - 1;
+                cur_img.setAttribute('src', img_list[Numimg]);
+            })
+        })
+    </script>
+
+    <script>
+        document.querySelector('#gallery').addEventListener('click', () => {
+            $("body").addClass("blur-all");
+           document.querySelector('.gallery_background').classList.add('visible_gallery')
+        });
+        document.querySelector('#gal').addEventListener('click',() => {
+            $("body").removeClass("blur-all");
+           document.querySelector('.gallery_background').classList.remove('visible_gallery')
+        })
+    </script>
 </body>
 </html>
