@@ -230,7 +230,7 @@
 
     .sleep_sections {
         font-family: Raleway, sans-serif;
-        font-size: 3vw;
+        font-size: 2vw;
         color: #FFFFFF;
         margin-right: 15vw;
         letter-spacing: 0.05vw;
@@ -1278,7 +1278,14 @@
         position: absolute;
         left: 10vw
     }
-@media screen and (max-width: 600px) {
+
+    #final_price{
+        padding-left: 5vw;
+        font-family: Railway, sans-serif;
+        color: #FFFFFF;
+        font-size: 4vw
+    }
+@media screen and (max-width: 1081px) {
     body {
         background: #221F1D;
         position: relative;
