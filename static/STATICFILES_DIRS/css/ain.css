@@ -1449,6 +1449,7 @@
         justify-items: center;
     }
     #kitchen{
+        padding-top: 4vw;
         width: 94vw;
         transform: translateY(-37vw);
     }
@@ -1543,7 +1544,7 @@
         /* margin-right: 11.7vw; */
         letter-spacing: 0.05vw;
         margin-top: 3vw;
-        transform: translateY(55vw);
+        transform: translateY(53vw);
     }
 
     .block_flats {
@@ -1726,20 +1727,21 @@
 
     .under_book {
         position: relative;
+        margin-bottom: -4vw;
         padding-top: 3vw;
-        display: flex;
+        display: grid;
         color: #FFFFFF;
+        grid-template-columns: repeat(2, 2fr);
     }
 
     .custom {
-        width: 20.6vw;
-        font-size: 1.5vw;
+        width: 42.6vw;
+        font-size: 3vw;
         font-family: Roboto, sans-serif;
-
     }
 
     .upper_txt {
-        padding-bottom: 1.5vh;
+        padding-bottom: 0.5vh;
     }
 
     .unused {
@@ -1761,12 +1763,13 @@
         display: none
     }
     .__select {
-        position: absolute;
+        position: relative;
         display: flex;
-        width: 15vw;
-        height: 5vh;
-        margin: 0 auto;
-        font-size: 1.8vw;
+        width: 21vw;
+        height: 4vw;
+        font-size: 2.4vw;
+        margin-bottom: 1vw;
+        top: 0vw;
         z-index: 1;
         text-align: center;
     }
@@ -1785,8 +1788,9 @@
     }
 
     .__select[data-state=active] .__select__label {
-        max-height: 10vh;
+        height: 1vw;
         border-width: 1px;
+        background-color: #221F1D;
     }
 
     .__select[data-state=active] .__select__label::before {
@@ -1797,7 +1801,7 @@
         display: flex;
         width: 100%;
         height: 100%;
-        padding: -0.04vw 10.1vh;
+        padding: 2.54vw 10.1vw;
         border-radius: 0.4vw;
         border: solid 1px #FFFFFF;
         cursor: pointer;
@@ -1809,12 +1813,12 @@
     .__select__title::before, .__select__title::after {
         content: "";
         position: absolute;
-        padding-left: 0.5vw;
+        padding-left: 1.5vw;
         top: 50%;
-        right: 1vw;
+        right: 2vw;
         display: block;
-        width: 0.47vw;
-        height: 0.28vh;
+        width: 1.77vw;
+        height: 0.18vh;
         transition: all 0.3s ease-out;
         background-color: #FFFFFF;
         transform: translate(-0.3vh, -50%) rotate(45deg);
@@ -1835,11 +1839,11 @@
 
     .__select__content {
         position: absolute;
-        top: 2.9vh;
+        /* top: 2.7vh; */
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: #221F1D;
+        /* background-color: #221F1D; */
         border: 1px solid rgba(199, 204, 209, 0);
         border-top-width: 0;
         border-bottom-width: 0;
@@ -1848,7 +1852,7 @@
         border-bottom-right-radius: 5px;
         transition: all 0.3s ease-out;
         z-index: 1;
-        margin-top: 1.5vh;
+        margin-top: 2.3vh;
     }
 
     .__select__content {
@@ -1860,7 +1864,7 @@
     }
 
     .__select__input:checked + label {
-        background-color: #221F1D;
+        /* background-color: #221F1D; */
     }
 
     .__select__input:checked + label::after {
@@ -1878,12 +1882,13 @@
         display: flex;
         align-items: center;
         width: 100%;
-        height: 3vh;
+        height: 0vw;
         max-height: 0;
         transition: all 0.2s ease-out;
         cursor: pointer;
-        padding-top: 3.5vh;
-        padding-bottom: 3.5vh;
+        padding-top: 2vw;
+        padding-bottom: 1.5vh;
+        justify-content: center;
     }
 
     .__select__label + input + .__select__label {
@@ -1935,13 +1940,13 @@
 
 
     .contianer {
-        width: max-content;
-        height: max-content;
-        position: relative;
+        /* width: max-content; */
+        /* height: max-content; */
+        position: absolute;
         display: none;
         padding: 2% 0px 0px 0px;
         justify-content: center;
-        top: 10%;
+        top: 13vw;
         right: 0%;
         width: 100%;
         height: 100%;
@@ -1950,12 +1955,12 @@
 
     .calendar {
         position: absolute;
-        height: 42vh;
+        height: 46vw;
         width: max-content;
         background-color: rgb(34 31 29);
         border-radius: 3%;
         overflow: hidden;
-        padding: 3vh 2vw 0px 3vh;
+        padding: 6vw 3vw 0px 3vw;
         z-index: 99;
     }
 
@@ -1975,8 +1980,8 @@
     }
 
     .calendar-body {
-        padding: 1vw;
-        transform: translateY(-4vh);
+        padding: 0vw;
+        transform: translateY(-13vw);
     }
 
     .calendar-week-days {
@@ -1992,7 +1997,7 @@
         display: grid;
         place-items: center;
         color: var(--bg-second);
-        height: 5vh;
+        height: 0vw;
     }
 
     .calendar-days {
@@ -2000,7 +2005,7 @@
         grid-template-columns: repeat(7, 1fr);
         gap: 1.2vw;
         color: var(--color-txt);
-        transform: translateY(-4vh);
+        transform: translateY(-2vh);
     }
 
     .calendar-days {
@@ -2015,21 +2020,21 @@
         padding: 0.5vh;
         position: relative;
         cursor: pointer;
+        font-size: 2vw;
         animation: to-top 1s forwards;
     }
 
     .month-picker {
-
-        padding: 0vh 1.4vw;
-        border-radius: 2%;
-        cursor: pointer;
-        display: flex;
-        transform: translateY(-4vh);
-    }
+padding: 0vh 0vw;
+border-radius: 2%;
+cursor: pointer;
+display: flex;
+transform: translateY(-5vh);
+}
 
     #month {
         padding-top: 3vh;
-        padding-right: 3vh;
+        padding-right: 1vh;
     }
 
     .month-picker:hover {
@@ -2042,12 +2047,12 @@
     }
 
     .year-change {
-        height: 9vh;
+        height: 17vw;
         width: 2vw;
         border-radius: 50%;
         display: grid;
         place-items: center;
-        margin: 0vw 1vh;
+        margin: 0vw 1vw;
         cursor: pointer;
     }
 
@@ -2092,7 +2097,7 @@
         color: var(--color-txt);
         background-color: #C72929;
         border-radius: 10%;
-        font-size: 2.5vh;
+        font-size: 2vw;
     }
 
     .calendar-days div.previous-date {
@@ -2213,10 +2218,11 @@
     }
 
     .open_arrow {
+        position: relative;
         margin-left: 2vw;
-
         color: #FFFFFF;
-        font-size: 2vw;
+        font-size: 7vw;
+        top: -3.3vw;
         cursor: pointer;
         transform: rotateX(60deg);
     }
@@ -2374,7 +2380,7 @@
         background-color: rgba(0,0,8,0.3);
         border-radius: 0.5vw;
         height: max-content;
-        width: 20vw;
+        width: 26vw;
         border: 1px solid #FFFFFF;
         display: flex;
     }
@@ -2388,14 +2394,19 @@
         display: grid; padding-bottom: 0.5vw;
     }
     .small_txt{
-        font-size: 2vh; color: #C9C9C9
+        font-size: 1vw;
+        color: #C9C9C9
     }
     .plusorminus {
         cursor: pointer;
         padding-left: 1vw
     }
     .nechto{
-        display: grid; padding-left: 1vw;padding-top: 1vw; padding-bottom: 1vw; justify-items: end
+        display: grid;
+        padding-left: 7vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        justify-items: end
     }
     .nechto1{
         margin-left: 2vw; padding-top: 0.8vw; display: flex
@@ -2418,10 +2429,10 @@
         transition: all 0.2s ease-in-out;
     }
     #middle_aged{
-        padding-left: 1vw;
+        /* padding-left: 1vw; */
     }
     #teen{
-        padding-left: 1vw;
+        /* padding-left: 1vw; */
     }
     #show_price{
         position: relative; padding-top: 10vw; display: flex; align-items: center
@@ -2459,6 +2470,7 @@
         border-radius: 3vw;
         justify-items: center;
     }
+
     .choosed-img {
         padding-top: 1vw;
         max-width: 100%;
