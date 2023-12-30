@@ -92,10 +92,11 @@
 
     .header-down {
         position: relative;
-        padding-top: 8vh;
+        /* padding-top: 8vh; */
         align-content: center;
         min-height: 23vh;
         display: flex;
+        align-items: center;
     }
 
     .weeks {
@@ -105,8 +106,8 @@
         font-weight: 700;
         line-height: 134.523%; /* 80.714px */
         letter-spacing: 0.3vw;
-        padding-right: 9vw;
-        padding-top: 10vh;
+        padding-right: 4vw;
+        /* padding-top: 10vh; */
     }
 
     .cirkle {
@@ -132,11 +133,12 @@
     #banya_outside {
         flex-shrink: 0;
         margin-right: 3vw;
+        width: 35vw;
     }
 
     .rectanglepl {
-        width: 21vw;
-        height: 33vh;
+        width: 20vw;
+        height: 17vw;
         flex-shrink: 0;
         border-radius: 9%;
         border: 0.17vw solid #C72929;
@@ -156,7 +158,7 @@
 
     .line {
         position: relative;
-        top: 95%;
+        top: 65%;
         left: 12.5%;
         width: 15.5vw;
         height: 0;
@@ -168,8 +170,8 @@
     }
 
     .rectanglefree {
-        width: 21vw;
-        height: 33vh;
+        width: 20vw;
+        height: 17vw;
         flex-shrink: 0;
         border-radius: 9%;
         border: 0.17vw solid #ffffff;
@@ -188,7 +190,7 @@
 
     .linefree {
         position: relative;
-        top: 95%;
+        top: 65%;
         left: 12.5%;
         width: 15.5vw;
         height: 0;
@@ -228,9 +230,9 @@
 
     .sleep_sections {
         font-family: Raleway, sans-serif;
-        font-size: 2vw;
+        font-size: 3vw;
         color: #FFFFFF;
-        margin-right: 11.7vw;
+        margin-right: 15vw;
         letter-spacing: 0.05vw;
     }
 
@@ -250,12 +252,12 @@
 
     .flat1_2 {
         padding-left: 1vw;
-        width: 37vw;
+        width: 31vw;
     }
 
     .forth {
         position: relative;
-        padding-top: 5vh;
+        padding-top: 3vh;
         min-height: auto;
         display: flex;
         align-items: center;
@@ -266,7 +268,7 @@
         font-size: 2vw;
         letter-spacing: 0.05vw;
         color: #FFFFFF;
-        padding-left: 21vw;
+        padding-left: 15vw;
         display: grid;
     }
 
@@ -292,7 +294,7 @@
         letter-spacing: 0.05vw;
         color: #FFFFFF;
         font-weight: 400;
-        padding-right: 11vw;
+        padding-right: 14vw;
     }
 
     .vertical_line_living {
@@ -360,19 +362,32 @@
         text-align: left;
         letter-spacing: 0.15vw;
         padding-left: 12vw;
-        height: 63vh;
-        padding-top: 10vh;
+        /* height: 63vh; */
+        /* padding-top: 10vh; */
+        align-items: center;
     }
     .hui{
-        padding-left: 10vw;
-        height: 63vh;
-        padding-top: 10vh;
+        padding-left: 1vw;
+        /* height: 33vh; */
+        /* padding-top: 10vh; */
     }
     .banya_inside{
         padding-left: 10vw; height: 63vh; padding-top: 10vh;
     }
     #house_inside{
-        padding-left: 10vw; height: 63vh; padding-top: 10vh;
+        /* padding-left: 8vw; */
+        /* height: 63vh; */
+        /* padding-top: 10vh; */
+    }
+    #house_outside{
+        width: 50vw;
+        margin-top: 4vw;
+    }
+    #house_inside{
+        width: 35vw;
+    }
+    #banya_inside{
+        width: 35vw;
     }
     #map {
         position: relative;
@@ -390,17 +405,21 @@
         font-family: Raleway, sans-serif;
     }
     .under_txt{
-        display: flex; align-items: center
+        display: flex;
+        align-items: center
     }
     .place_txt {
         display: flex;
-        padding-left: 1vw;
-        height: 30vh;
+        /* padding-left: 1vw; */
+        /* height: 30vh; */
+        align-items: center;
     }
-
+    #kitchen{
+        width: 35vw;
+    }
     .vertical_line_place {
         position: relative;
-        height: 30vh;
+        height: 23vh;
         width: 0;
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
@@ -801,13 +820,21 @@
         display: none;
     }
 
-    .that_is_all {
-        display: none;
+    #that_is_all{
+        font-size: 2vw;
+        font-family: Montserrat, sans-serif;
+        color: #FFFFFF;
+        padding: 1vh;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  0.5vw;
+        height: max-content;
+        width: max-content;
+        border: 1px solid #FFFFFF;
+        display: grid;
     }
-
     .visible {
         top: 85%;
-        display: flex;
+        display: grid !important;
         /* position: relative; */
         transition: ease-in-out 0.2s !important;
         filter: blur(0px) !important;
@@ -1027,7 +1054,37 @@
         border-color: white;
         border: 1px solid;
     }
-
+    .black_rect2{
+        justify-items: center;
+        padding: 2vw;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  2.5vw;
+        height: max-content;
+        width: 80vw;
+        border: 1px solid #FFFFFF;
+        display: grid
+    }
+    .black_rect3{
+        margin-top: 3vw;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  2.5vw;
+        height: max-content;
+        width: max-content;
+        border: 1px solid #FFFFFF;
+        display: grid
+    }
+    .black_rect4{
+        margin-top: 3vw;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  2.5vw;
+        height: max-content;
+        width: max-content;
+        border: 1px solid #FFFFFF;
+        display: grid
+    }
+    .message {
+        font-size: 1vw;
+    }
     .plusorminus {
         cursor: pointer;
         padding-left: 1vw
@@ -1148,8 +1205,87 @@
         filter: blur(0px) !important;
     }
 }
+.pizda{
+        display: grid;
+        padding-left: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    .vagina{
+        display: grid;
+        padding-bottom: 0.5vw;
+        width: 7vw;
+    }
+    .small_txt{
+        font-size: 2vh; color: #C9C9C9
+    }
+    .plusorminus {
+        cursor: pointer;
+        padding-left: 1vw
+    }
+    .nechto{
+        display: grid;
+        padding-left: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        justify-items: end
+    }
+    .nechto1{
+        margin-left: 2vw; padding-top: 0.8vw; display: flex
+    }
+    .nechto2{
+        margin-left: 2.7vw; padding-top: 0.8vw; display: flex
+    }
+    .plus{
+        cursor: pointer; padding-left: 1vw; padding-right: 1vw
+    }
+    .minus{
+        cursor: pointer;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .plus:hover {
+        color: #C72929;
+        transition: all 0.2s ease-in-out;
+    }
+    .black_rect1 {
+        background-color: rgba(0,0,8,0.3);
+        border-radius: 0.5vw;
+        height: max-content;
+        width: 20vw;
+        border: 1px solid #FFFFFF;
+        display: flex;
+    }
+    #call{
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: Railway, sans-serif
+    }
+    #phone{
+        padding:0.3vw 21vw 0.3vw;
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: Railway, sans-serif
+    }
+    #phone1{
+        padding:0.3vw 25.2vw 0.3vw;
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: Railway, sans-serif
+    }
+    .that_is_all {
+        display: none;
+        position: absolute;
+        left: 10vw
+    }
 
-@media screen and (max-width: 520px) {
+    #final_price{
+        padding-left: 5vw;
+        font-family: Railway, sans-serif;
+        color: #FFFFFF;
+        font-size: 4vw
+    }
+@media screen and (max-width: 600px) {
     body {
         background: #221F1D;
         position: relative;
