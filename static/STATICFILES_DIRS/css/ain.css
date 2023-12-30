@@ -20,7 +20,6 @@
 
     .container {
         display: grid;
-        justify-content: space-between;
         justify-items: center;
     }
 
@@ -406,7 +405,8 @@
         font-family: Raleway, sans-serif;
     }
     .under_txt{
-        display: flex; align-items: center
+        display: flex;
+        align-items: center
     }
     .place_txt {
         display: flex;
@@ -820,13 +820,21 @@
         display: none;
     }
 
-    .that_is_all {
-        display: none;
+    #that_is_all{
+        font-size: 2vw;
+        font-family: Montserrat, sans-serif;
+        color: #FFFFFF;
+        padding: 1vh;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  0.5vw;
+        height: max-content;
+        width: max-content;
+        border: 1px solid #FFFFFF;
+        display: grid;
     }
-
     .visible {
         top: 85%;
-        display: flex;
+        display: grid !important;
         /* position: relative; */
         transition: ease-in-out 0.2s !important;
         filter: blur(0px) !important;
@@ -1046,7 +1054,37 @@
         border-color: white;
         border: 1px solid;
     }
-
+    .black_rect2{
+        justify-items: center;
+        padding: 2vw;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  2.5vw;
+        height: max-content;
+        width: 80vw;
+        border: 1px solid #FFFFFF;
+        display: grid
+    }
+    .black_rect3{
+        margin-top: 3vw;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  2.5vw;
+        height: max-content;
+        width: max-content;
+        border: 1px solid #FFFFFF;
+        display: grid
+    }
+    .black_rect4{
+        margin-top: 3vw;
+        background-color: rgba(0,0,8,0.3);
+        border-radius:  2.5vw;
+        height: max-content;
+        width: max-content;
+        border: 1px solid #FFFFFF;
+        display: grid
+    }
+    .message {
+        font-size: 1vw;
+    }
     .plusorminus {
         cursor: pointer;
         padding-left: 1vw
@@ -1167,8 +1205,80 @@
         filter: blur(0px) !important;
     }
 }
-
-@media screen and (max-width: 520px) {
+.pizda{
+        display: grid;
+        padding-left: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    .vagina{
+        display: grid;
+        padding-bottom: 0.5vw;
+        width: 7vw;
+    }
+    .small_txt{
+        font-size: 2vh; color: #C9C9C9
+    }
+    .plusorminus {
+        cursor: pointer;
+        padding-left: 1vw
+    }
+    .nechto{
+        display: grid;
+        padding-left: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        justify-items: end
+    }
+    .nechto1{
+        margin-left: 2vw; padding-top: 0.8vw; display: flex
+    }
+    .nechto2{
+        margin-left: 2.7vw; padding-top: 0.8vw; display: flex
+    }
+    .plus{
+        cursor: pointer; padding-left: 1vw; padding-right: 1vw
+    }
+    .minus{
+        cursor: pointer;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .plus:hover {
+        color: #C72929;
+        transition: all 0.2s ease-in-out;
+    }
+    .black_rect1 {
+        background-color: rgba(0,0,8,0.3);
+        border-radius: 0.5vw;
+        height: max-content;
+        width: 20vw;
+        border: 1px solid #FFFFFF;
+        display: flex;
+    }
+    #call{
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: Railway, sans-serif
+    }
+    #phone{
+        padding:0.3vw 21vw 0.3vw;
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: Railway, sans-serif
+    }
+    #phone1{
+        padding:0.3vw 25.2vw 0.3vw;
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: Railway, sans-serif
+    }
+    .that_is_all {
+        display: none;
+        position: absolute;
+        left: 10vw
+    }
+@media screen and (max-width: 600px) {
     body {
         background: #221F1D;
         position: relative;
