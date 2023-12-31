@@ -1564,7 +1564,7 @@
     }
 
     .flat1_2 {
-        /* padding-left: 1vw; */
+        padding-left: 2vw;
         width: 94vw;
     }
 
@@ -1762,6 +1762,10 @@
     *::after {
         box-sizing: border-box;
     }
+
+.hui {
+    padding-left: 2vw;
+}
 
     h1 {
         display: flex;
