@@ -1306,14 +1306,14 @@
     .feed{
         margin-top: 2vh;
         font-size: 2vw;
+        font-weight: 200;
         font-family: Raleway,sans-serif;
         color: #FFFFFF;
         width: 90vw;
         border: 0.3vw solid #FFFFFF;
         border-radius: 2vw;
         height: max-content;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding: 1vw;
     }
     .name{
         font-family: Raleway, sans-serif;
@@ -1345,10 +1345,18 @@
 
     .nav-item {
         margin-right: 2vw;
+        display: none;
         text-decoration: none;
         color: #FFFFFF;
         box-sizing: content-box;
     }
+
+#gallery {
+    display: flex;
+    font-size: 4vw;
+    transform: translateX(53vw);
+    /* padding: 0vw; */
+}
 
     .nav-item:hover .underline_r {
         stroke: #C72929;
@@ -1378,13 +1386,15 @@
         flex-shrink: 0;
         stroke-width: 1px;
         stroke: #FFF;
-        border: 1px solid #221F1D;
-        border-radius: 35%;
+        border: 1px solid #c72929;
+        border-radius: 0;
         transition: 0.5s;
         transform: translateY(6px);
+        margin-left: 2vw;
     }
 
     .nav-about {
+        display: none;
         color: #ffffff;
         margin-right: 2vw;
         text-decoration: none;
@@ -1413,9 +1423,10 @@
     .call_number {
         font-family: Roboto, sans-serif;
         color: #FFFFFF;
+        font-size: 4vw;
         font-style: normal;
         text-decoration: none;
-        padding-left: 37vw;
+        transform: translateX(-36vw);
     }
 
     .call_number:hover .underline_r {
@@ -1795,6 +1806,10 @@
     *::after {
         box-sizing: border-box;
     }
+
+.line_gallery {
+    height: 3vw;
+}
 
 .hui {
     padding-left: 2vw;
@@ -2657,20 +2672,20 @@
         padding-top: 3vw;
     }
     .feed{
-        margin-top: 2vh;
-        font-size: 3vw;
-        font-family: Raleway,sans-serif;
+        margin-top: 1vw;
+        font-size: 4vw;
+        font-family: Raleway, sans-serif;
+        font-weight: 200;
         color: #FFFFFF;
         width: 90vw;
         border: 0.3vw solid #FFFFFF;
         border-radius: 2vw;
         height: max-content;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding: 2vw;
     }
     .name{
         font-family: Raleway, sans-serif;
         color: #FFFFFF;
-        font-size: 4vw;
+        font-size: 6vw;
     }
 }
