@@ -106,7 +106,7 @@
         font-weight: 700;
         line-height: 134.523%; /* 80.714px */
         letter-spacing: 0.3vw;
-        padding-right: 4vw;
+        padding-right: 11vw;
         /* padding-top: 10vh; */
     }
 
@@ -121,7 +121,6 @@
         background: white;
         filter: blur(250px);
     }
-
 
     .down-header-down {
         position: relative;
@@ -380,7 +379,7 @@
         /* padding-top: 10vh; */
     }
     #house_outside{
-        width: 50vw;
+        width: 43vw;
         margin-top: 4vw;
     }
     #house_inside{
@@ -466,6 +465,11 @@
     *::after {
         box-sizing: border-box;
     }
+
+#show_price {
+    display: flex;
+    align-items: center;
+}
 
 .feedback-block {
     margin-top: 0vw;
@@ -2549,7 +2553,7 @@
         /* top: 591vw; */
         display: flex;
         align-items: center;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
         left: -2%;
         z-index: 0;
     }
