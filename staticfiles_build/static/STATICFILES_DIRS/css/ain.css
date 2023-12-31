@@ -1214,7 +1214,7 @@
     .vagina{
         display: grid;
         padding-bottom: 0.5vw;
-        width: 7vw;
+        width: 14vw;
     }
     .small_txt{
         font-size: 2vh; color: #C9C9C9
@@ -1242,7 +1242,7 @@
     .minus{
         cursor: pointer;
         padding-left: 1vw;
-        padding-right: 1vw;
+        padding-right: 3vw;
     }
     .plus:hover {
         color: #C72929;
@@ -1738,7 +1738,7 @@
 
     .custom {
         width: 30.6vw;
-        font-size: 5vw;
+        font-size: 3vw;
         font-family: Roboto, sans-serif;
     }
 
@@ -1772,7 +1772,7 @@
     .__select {
         position: relative;
         display: flex;
-        width: 44vw;
+        width: 47.1vw;
         height: 9vw;
         font-size: 6.1vw;
         margin-bottom: 1vw;
@@ -1805,19 +1805,20 @@
     }
 
     .__select__title {
-        position: sticky;
         display: flex;
-        width: 100%;
-        /* height: 100%; */
+        width: 47vw;
+        height: 8vw;
         /* padding: 2.54vw 10.1vw; */
         border-radius: 0.4vw;
         border: solid 1px #FFFFFF;
         cursor: pointer;
         z-index: 2;
-        /* top: 32%; */
+        top: 50%;
         align-items: center;
     }
-
+    .translate_y{
+        transform: translateY(190%);
+    }
     .__select__title::before, .__select__title::after {
         content: "";
         position: absolute;
@@ -1847,10 +1848,10 @@
 
     .__select__content {
         position: absolute;
-        top: 2.7vh;
+        top: 1.9vw;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 98%;
         /* background-color: #221F1D; */
         border: 1px solid rgba(199, 204, 209, 0);
         border-top-width: 0;
@@ -1861,6 +1862,7 @@
         transition: all 0.3s ease-out;
         z-index: 1;
         margin-top: 2.3vh;
+        padding-top: 3vw;
     }
 
     .__select__content {
@@ -2220,15 +2222,16 @@
     }
 
     .first_date {
-        font-size: 2vw !important;
+        font-size: 6vw !important;
     }
 
     .second_date {
-        font-size: 2vw;
+        font-size: 6vw;
     }
 
     .message {
-        font-size: 1vw;
+        font-size: 3vw;
+        margin-bottom: 2vw;
     }
 
     .open_arrow {
@@ -2236,7 +2239,7 @@
         margin-left: 2vw;
         color: #FFFFFF;
         font-size: 7vw;
-        top: -3.3vw;
+        top: -1.3vw;
         cursor: pointer;
         transform: rotateX(60deg);
     }
@@ -2394,7 +2397,7 @@
         background-color: rgba(0,0,8,0.3);
         border-radius: 0.5vw;
         height: max-content;
-        width: 43vw;
+        width: 47vw;
         border: 1px solid #FFFFFF;
         display: flex;
     }
@@ -2408,7 +2411,7 @@
         display: grid; padding-bottom: 0.5vw;
     }
     .small_txt{
-        font-size: 1vw;
+        font-size: 2.2vw;
         color: #C9C9C9
     }
     .plusorminus {
@@ -2417,7 +2420,7 @@
     }
     .nechto{
         display: grid;
-        padding-left: 21vw;
+        padding-left: 14vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
         justify-items: end
@@ -2429,10 +2432,15 @@
         margin-left: 2.7vw; padding-top: 0.8vw; display: flex
     }
     .plus{
-        cursor: pointer; padding-left: 1vw; padding-right: 1vw
+        font-size: 5vw;
+        cursor: pointer;
+        padding-left: 3vw;
+        padding-right: 1vw
     }
     .minus{
-        cursor: pointer; padding-left: 1vw
+        cursor: pointer;
+        padding-left: 1vw;
+        font-size: 5vw;
     }
     .plus:hover {
         color: #C72929;
@@ -2444,9 +2452,11 @@
     }
     #middle_aged{
         /* padding-left: 1vw; */
+        font-size: 5vw;
     }
     #teen{
         /* padding-left: 1vw; */
+        font-size: 5vw;
     }
     #show_price{
         position: relative; padding-top: 10vw; display: flex; align-items: center
@@ -2580,9 +2590,12 @@
     }
     .reverse_right{
         transform: translateX(215%);
+        transform: translate(215%, 47%);
         width: 31.6vw;
     }
     .reverse_left{
         transform: translateX(-219%);
+        transform: translate(-219%, -54%);
+        margin-bottom: 1vw;
     }
 }
