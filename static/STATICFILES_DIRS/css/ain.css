@@ -1330,6 +1330,9 @@
         color: #FFFFFF;
         font-size: 2vw;
     }
+    .ynd_map{
+        display: none;
+    }
 @media screen and (max-width: 1081px) {
     body {
         background: #221F1D;
@@ -1736,6 +1739,7 @@
         display: flex;
         letter-spacing: 0.15vw;
         /* padding-left: 12vw; */
+        padding-bottom: 4vw;
     }
 
     #map {
@@ -2546,12 +2550,12 @@
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        left: 4%;
+        left: -2%;
         z-index: 0;
     }
     #that_is_all{
         position: relative;
-        font-size: 8vw;
+        font-size: 6vw;
         font-family: Montserrat, sans-serif;
         color: #FFFFFF;
         padding: 1vh;
@@ -2561,12 +2565,18 @@
         width: max-content;
         border: 1px solid #FFFFFF;
         display: grid;
+        border-radius: 3.02vw;
     }
     #final_price{
-        padding-right: 6.2vw;
+        /* position: relative; */
+        padding-right: 11vw;
         font-family: Railway, sans-serif;
         color: #FFFFFF;
-        font-size: 4vw
+        font-size: 8vw;
+        /* width: 38vw; */
+        display: flex;
+        justify-items: start;
+        right: 6vw;
     }
     .gallery_background {
         background: rgba(112, 112, 112, 0.3);
@@ -2734,5 +2744,17 @@
     }
     .counter_unvisible{
         display: none !important;
+    }
+    .ynd_map{
+        position: relative;
+        color: #FFFFFF;
+        font-size: 7vw;
+        border: 0.82vw solid #C72929;
+        width: 96vw;
+        display: grid;
+        justify-items: center;
+        margin-left: 2vw;
+        border-radius: 3.02vw;
+        text-decoration: none;
     }
 }
