@@ -309,8 +309,8 @@
     </div>
         </div>
     <div id="show_price">
+        <div id="final_price" middle_aged="0" teen="0" config="0" days="0" k="0">0&#8381</div>
         <div id="that_is_all">Забронировать</div>
-        <div id="final_price"></div>
 
     </div>
 </div>
@@ -325,6 +325,11 @@
             </div>
             <div class="black_rect4">
                 <div id="phone1">WhatsApp</div>
+            </div>
+            <div class="mem pric"> Итоговая стоимость:
+                <script>
+                    document.querySelector(".pric").innerHTML += document.querySelector("#final_price").innerHTML
+                </script>
             </div>
             <div class="mem">Пожалуйста, сообщите итоговую стоимость, дату поездки и количество проживающих</div>
         </div>
@@ -968,8 +973,9 @@ let kol = 0
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
                 let kolichestvo = Number(final_price.getAttribute('k'));
-                if((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000 > day){
-                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000).toString() + '&#8381';
+                console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
+                if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
@@ -991,8 +997,9 @@ let kol = 0
                 let conf = Number(final_price.getAttribute('config'));
                 let day = Number(final_price.getAttribute('days'));
                 let kolichestvo = Number(final_price.getAttribute('k'));
-                if((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000 > day){
-                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * day + kolichestvo * conf * 1000).toString() + '&#8381';
+                console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
+                if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
+                    final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
