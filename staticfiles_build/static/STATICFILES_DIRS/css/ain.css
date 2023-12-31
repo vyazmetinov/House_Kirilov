@@ -1253,7 +1253,7 @@
     .minus{
         cursor: pointer;
         padding-left: 1vw;
-        padding-right: 3vw;
+        padding-right: 1vw;
     }
     .plus:hover {
         color: #C72929;
@@ -1893,6 +1893,7 @@
     }
     .translate_y{
         transform: translateY(0%);
+        z-index: 2;
     }
     .__select__title::before, .__select__title::after {
         content: "";
@@ -2211,6 +2212,7 @@
     .that_is_all {
         display: none;
         position: absolute;
+        /* top: 20%; */
         left: 10vw
     }
     .black_rect2{
@@ -2518,7 +2520,7 @@
     }
     .minus{
         cursor: pointer;
-        padding-left: 1vw;
+        padding-right: 3vw;
         font-size: 5vw;
     }
     .plus:hover {
@@ -2539,8 +2541,8 @@
     }
     #show_price{
         position: relative;
-        /* padding-top: 40vw; */
-        top: 12vw;
+        padding-top: 26vw;
+        /* top: 591vw; */
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
@@ -2569,7 +2571,7 @@
     .gallery_background {
         background: rgba(112, 112, 112, 0.3);
         width: 100%;
-        height: 7%;
+        height: 26%;
         top: 1%;
         /* left: 10%; */
         display: none;
@@ -2583,10 +2585,10 @@
     }
 
     .choosed-img {
-        position: absolute;
-        padding-top: 1vw;
-        max-width: 95%;
-        max-height: 57%;
+        position: relative;
+        /* padding-top: 65vw; */
+        width: 151%;
+        max-height: 80%;
         display: flex;
         justify-content: center;
         padding-bottom: 1vw;
@@ -2601,10 +2603,10 @@
     .cont {
         position: absolute;
         max-width: 80%;
-        width: 80%;
+        width: 90%;
         display: flex;
         margin-bottom: 1vw;
-        top: 80%;
+        top: 90%;
     }
 
 .cont {}
@@ -2612,6 +2614,7 @@
     .img-button {
         position: relative;
         color: #FFFFFF;
+        width: 10vw;
         font-size: 2.2vw;
         cursor: pointer;
         border: none;
@@ -2677,7 +2680,7 @@
         display: grid;
         transition: ease-in-out 0.2s !important;
         filter: blur(0px) !important;
-        align-items: start;
+        align-items: center;
     }
     .reverse_right{
         transform: translateX(215%);
@@ -2688,6 +2691,7 @@
         transform: translateX(-219%);
         transform: translate(-219%, 20%);
         margin-bottom: 1vw;
+        z-index: 2;
     }
 
     .feedback{
@@ -2729,6 +2733,6 @@
         top: 6%;
     }
     .counter_unvisible{
-        display: none;
+        display: none !important;
     }
 }
