@@ -1965,7 +1965,7 @@
 
     .calendar {
         position: absolute;
-        height: 46vw;
+        height: 54vw;
         width: max-content;
         background-color: rgb(34 31 29);
         border-radius: 3%;
@@ -2022,7 +2022,7 @@
     }
 
     .calendar-days div {
-        width: 1.5vw;
+        width: 4.8vw;
         height: 2.1vh;
         display: flex;
         align-items: center;
@@ -2030,7 +2030,7 @@
         padding: 0.5vh;
         position: relative;
         cursor: pointer;
-        font-size: 2vw;
+        font-size: 5vw;
         animation: to-top 1s forwards;
     }
 
@@ -2051,6 +2051,7 @@
     #month {
         padding-top: 3vh;
         padding-right: 1vh;
+        font-size: 6vw;
     }
 
     .month-picker:hover {
@@ -2063,12 +2064,13 @@
     }
 
     .year-change {
-        height: 17vw;
+        font-size: 6vw;
+        height: 21vw;
         width: 2vw;
         border-radius: 50%;
         display: grid;
         place-items: center;
-        margin: 0vw 1vw;
+        margin: 0vw 2vw;
         cursor: pointer;
     }
 
@@ -2090,6 +2092,7 @@
 
     #year {
         padding-top: 3vh;
+        font-size: 6vw;
     }
 
     #year:hover {
@@ -2113,7 +2116,7 @@
         color: var(--color-txt);
         background-color: #C72929;
         border-radius: 10%;
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .calendar-days div.previous-date {
