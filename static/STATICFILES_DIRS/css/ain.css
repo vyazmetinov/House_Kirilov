@@ -846,7 +846,7 @@
         display: grid;
     }
     .visible {
-        top: 65%;
+        top: 75%;
         display: grid !important;
         /* position: relative; */
         transition: ease-in-out 0.2s !important;
@@ -2269,7 +2269,7 @@
         font-family: Railway, sans-serif
     }
     .visible {
-        top: 73%;
+        top: 77%;
         display: flex;
         /* position: relative; */
         transition: ease-in-out 0.2s !important;
