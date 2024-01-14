@@ -326,9 +326,9 @@
             <div class="black_rect4">
                 <div id="phone1">WhatsApp</div>
             </div>
-            <div class="mem pric"> Итоговая стоимость:
+            <div class="mem pric">
                 <script>
-                    document.querySelector(".pric").innerHTML += document.querySelector("#final_price").innerHTML
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 </script>
             </div>
             <div class="mem">Пожалуйста, сообщите итоговую стоимость, дату поездки и количество проживающих</div>
@@ -422,9 +422,11 @@
             console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
             if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                 final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
             else{
                 final_price.innerHTML = (day).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
 
         })
@@ -445,9 +447,11 @@
             console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
             if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                 final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
             else{
                 final_price.innerHTML = (day).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
         })
 
@@ -468,9 +472,11 @@
             console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
             if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                 final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
             else{
                 final_price.innerHTML = (day).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
         })
         minus_teen.addEventListener('click',() => {
@@ -490,9 +496,11 @@
             console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
             if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                 final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
             else{
                 final_price.innerHTML = (day).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
 
         })
@@ -535,9 +543,11 @@
                 console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
                 if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                 final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
             else{
                 final_price.innerHTML = (day).toString() + '&#8381';
+                document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
             }
             }
             else if(evt.target.getAttribute('data-value') === "Баня"){
@@ -551,9 +561,11 @@
                 console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
                 if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                     final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
             }
             else if(evt.target.getAttribute('data-value') === "Лодка"){
@@ -567,9 +579,11 @@
                 console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
                 if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                     final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
             }
             else {
@@ -583,9 +597,11 @@
                 console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
                 if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                     final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
             }
           });
@@ -976,9 +992,11 @@ let kol = 0
                 console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
                 if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                     final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
             }
 
@@ -1000,9 +1018,11 @@ let kol = 0
                 console.log("BBBBBBB", day, (midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000)
                 if((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000 > day){
                     final_price.innerHTML = ((midle_aged * 1000 + ten * 500) * kolichestvo + kolichestvo * conf * 1000).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
                 else{
                     final_price.innerHTML = (day).toString() + '&#8381';
+                    document.querySelector(".pric").innerHTML = "Итоговая стоимость: " + document.querySelector("#final_price").innerHTML
                 }
 
 
