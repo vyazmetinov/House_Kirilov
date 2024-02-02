@@ -1082,9 +1082,14 @@
         background-color: rgba(0,0,8,0.3);
         border-radius:  2.5vw;
         height: max-content;
-        width: max-content;
+        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit игнор. */
+        width: -webkit-fill-available;  /* Mozilla игнор. */
+        width: fill-available;
         border: 1px solid #FFFFFF;
-        display: grid
+        display: grid;
+        text-align: center;
+
     }
     .black_rect4{
         margin-top: 3vw;
@@ -1280,7 +1285,8 @@
         padding:0.3vw 21vw 0.3vw;
         color: #FFFFFF;
         font-size: 3vw;
-        font-family: Railway, sans-serif
+        font-family: Railway, sans-serif;
+        text-decoration: none;
     }
     #phone1{
         padding:0.3vw 25.2vw 0.3vw;
@@ -2243,7 +2249,8 @@
         background-color: rgba(0,0,8,0.3);
         border-radius:  2.5vw;
         height: max-content;
-        width: max-content;
+        width: -webkit-fill-available;
+        text-align: center;
         border: 1px solid #FFFFFF;
         display: grid
     }
@@ -2252,6 +2259,7 @@
         color: #FFFFFF;
         font-size: 3vw;
         font-family: Railway, sans-serif
+        text-decoration: none;
     }
     .black_rect4{
         margin-top: 3vw;
