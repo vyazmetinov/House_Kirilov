@@ -106,7 +106,7 @@
         font-weight: 700;
         line-height: 134.523%; /* 80.714px */
         letter-spacing: 0.3vw;
-        padding-right: 11vw;
+        padding-right: 12vw;
         /* padding-top: 10vh; */
     }
 
@@ -131,7 +131,7 @@
 
     #banya_outside {
         flex-shrink: 0;
-        margin-right: 3vw;
+        margin-right: 4vw;
         width: 35vw;
     }
 
@@ -141,7 +141,7 @@
         flex-shrink: 0;
         border-radius: 9%;
         border: 0.17vw solid #C72929;
-        margin-right: 3vw;
+        margin-right: 4vw;
     }
 
     .placement {
@@ -231,7 +231,7 @@
         font-family: Raleway, sans-serif;
         font-size: 2vw;
         color: #FFFFFF;
-        margin-right: 15vw;
+        margin-right: 14vw;
         letter-spacing: 0.05vw;
     }
 
@@ -251,7 +251,7 @@
 
     .flat1_2 {
         padding-left: 1vw;
-        width: 31vw;
+        width: 34vw;
     }
 
     .forth {
@@ -267,7 +267,7 @@
         font-size: 2vw;
         letter-spacing: 0.05vw;
         color: #FFFFFF;
-        padding-left: 15vw;
+        padding-left: 13vw;
         display: grid;
     }
 
@@ -325,12 +325,12 @@
 
     .img {
         align-content: center;
-        width: 8vw;
+        width: 4vw;
     }
 
     .untxt {
         font-family: Raleway, sans-serif;
-        font-size: 1.8vw;
+        font-size: 1.4vw;
         color: #ffffff;
         text-align: center;
     }
@@ -379,11 +379,11 @@
         /* padding-top: 10vh; */
     }
     #house_outside{
-        width: 43vw;
+        width: 44vw;
         margin-top: 4vw;
     }
     #house_inside{
-        width: 35vw;
+        width: 36vw;
     }
     #banya_inside{
         width: 35vw;
@@ -2258,7 +2258,7 @@
         padding:0.3vw 21vw 0.3vw;
         color: #FFFFFF;
         font-size: 3vw;
-        font-family: Railway, sans-serif
+        font-family: Railway, sans-serif;
         text-decoration: none;
     }
     .black_rect4{
