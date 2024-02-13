@@ -1,4 +1,9 @@
 @media screen and (min-width: 520px) {
+    a:any-link {
+        color: #FFFFFF;
+        cursor: pointer;
+        text-decoration: none;
+    }
     body {
         background: #221F1D;
         position: relative;
@@ -1342,6 +1347,18 @@
     }
     .ynd_map{
         display: none;
+    }
+    .avito{
+        display: flex;
+        justify-items: flex-end !important;
+        margin-right: 8vw;
+    }
+    .avito_link{
+        font-family: "Raleway SemiBold", sans-serif;
+        font-size: 2vw;
+    }
+    .avito_icon{
+        width: 5vw;
     }
 @media screen and (max-width: 1081px) {
     body {
