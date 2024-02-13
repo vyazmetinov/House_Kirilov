@@ -1350,7 +1350,7 @@
     }
     .avito{
         display: flex;
-        justify-items: flex-end !important;
+        justify-content: flex-end !important;
         margin-right: 8vw;
     }
     .avito_link{
