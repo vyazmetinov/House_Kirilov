@@ -1087,10 +1087,6 @@
         background-color: rgba(0,0,8,0.3);
         border-radius:  2.5vw;
         height: max-content;
-        width: -webkit-fill-available;
-        width: -moz-available;          /* WebKit Ð¸Ð³Ð½Ð¾Ñ€. */
-        width: -webkit-fill-available;  /* Mozilla Ð¸Ð³Ð½Ð¾Ñ€. */
-        width: fill-available;
         border: 1px solid #FFFFFF;
         display: grid;
         text-align: center;
@@ -2268,7 +2264,6 @@
         background-color: rgba(0,0,8,0.3);
         border-radius:  2.5vw;
         height: max-content;
-        width: -webkit-fill-available;
         text-align: center;
         border: 1px solid #FFFFFF;
         display: grid
