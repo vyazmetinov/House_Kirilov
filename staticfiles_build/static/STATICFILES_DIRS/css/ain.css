@@ -1278,20 +1278,20 @@
         align-items: center;
         font-family: Raleway, sans-serif;
         /* padding-top: 2vw; */
-        transform: scale(-1);
+        /* transform: scale(-1); */
     }
     #header1{
-        align-content: center;
         display: flex;
     }
 
     .container {
         display: grid;
         justify-items: center;
+        position: relative;
     }
 
     .nav-item {
-        transform: scale(-1);
+        /* transform: scale(-1); */
         display: none;
         text-decoration: none;
         color: #FFFFFF;
@@ -1371,7 +1371,7 @@
         font-family: Roboto, sans-serif;
         color: #FFFFFF;
         font-size: 4vw;
-        transform: scale(-1);
+        /* transform: scale(-1); */
         font-style: normal;
         text-decoration: none;
         width: 34vw;
@@ -1573,8 +1573,8 @@
         font-size: 4vw;
         letter-spacing: 0.05vw;
         color: #FFFFFF;
-        display: grid;
-        padding-top: 2vh;
+        /* display: grid; */
+        padding-top: 3vw;
     }
 
     .vertical_line_plot {
@@ -1662,10 +1662,10 @@
         display: flex;
         font-size: 1.5vw;
         text-align: left;
-        display: inline-grid;
+        /* display: inline-grid; */
         letter-spacing: 0.15vw;
         padding-bottom: 4vw;
-        justify-items: start;
+        /* justify-items: start; */
     }
 
     #map {
