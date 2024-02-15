@@ -1271,18 +1271,18 @@
 
 
     header {
-        width: max-content;
+        min-width: auto;
         font-size: 1vw;
         display: flex;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         align-items: center;
         font-family: Raleway, sans-serif;
-        padding-top: 2vw;
+        /* padding-top: 2vw; */
         transform: scale(-1);
     }
     #header1{
         align-content: center;
-        /* display: contents; */
+        display: flex;
     }
 
     .container {
@@ -1528,18 +1528,25 @@
         min-height: auto;
         display: grid;
         justify-items: center;
-        transform: scale(-1, -1);
+        transform: scale(-1);
     }
 
     .sleep_sections {
+        /* font-family: Raleway, sans-serif; */
+        /* font-size: 4vw; */
+        /* color: #FFFFFF; */
+        /* letter-spacing: 0.05vw; */
+        /* transform: scale(-1); */
+        /* margin-bottom: 2vh; */
+        /* display: grid; */
+        /* justify-items: start; */
         font-family: Raleway, sans-serif;
         font-size: 4vw;
-        color: #FFFFFF;
         letter-spacing: 0.05vw;
+        color: #FFFFFF;
+        font-weight: 400;
         transform: scale(-1);
-        margin-bottom: 2vh;
-        display: grid;
-        justify-items: start;
+        padding-top: 3vw;
     }
 
     .block_flats {
