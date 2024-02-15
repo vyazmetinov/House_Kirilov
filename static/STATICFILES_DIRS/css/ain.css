@@ -1271,7 +1271,7 @@
 
 
     header {
-        width: 94vw;
+        width: max-content;
         font-size: 1vw;
         display: flex;
         justify-content: space-evenly;
@@ -1282,7 +1282,7 @@
     }
     #header1{
         align-content: center;
-        display: contents;
+        /* display: contents; */
     }
 
     .container {
@@ -1302,7 +1302,7 @@
     display: flex;
     font-size: 4vw;
     /* padding: 0vw; */
-    margin-right: 30vw;
+    margin-left: 30vw;
 }
 
     .nav-item:hover .underline_r {
@@ -1423,7 +1423,7 @@
         padding-top: 4vh;
         align-items: center;
         display: flex;
-        padding-bottom: 4vw;
+        padding-bottom: 2vw;
     }
 
     #banya_outside {
@@ -1538,6 +1538,8 @@
         letter-spacing: 0.05vw;
         transform: scale(-1);
         margin-bottom: 2vh;
+        display: grid;
+        justify-items: start;
     }
 
     .block_flats {
