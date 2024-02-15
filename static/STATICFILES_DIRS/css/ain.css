@@ -1302,7 +1302,7 @@
     display: flex;
     font-size: 4vw;
     /* padding: 0vw; */
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
 }
 
     .nav-item:hover .underline_r {
@@ -1315,13 +1315,13 @@
         margin-top: 2vw;
     }
     #house_inside{
-        width: 94vw;
+        width: 100vw;
     }
     #banya_outside{
         width: 94vw;
     }
     #banya_inside{
-        width: 94vw;
+        width: 100vw;
         /* -webkit-transform-origin-y: top; */
         transform: scale(-1);
     }
@@ -1443,7 +1443,7 @@
         display: grid;
     }
     #kitchen{
-        width: 94vw;
+        width: 100vw;
         border-radius: 0;
         transform: scale(-1);
     }
