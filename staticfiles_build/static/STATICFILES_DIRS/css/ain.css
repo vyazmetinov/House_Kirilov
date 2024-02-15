@@ -1274,7 +1274,7 @@
         width: 94vw;
         font-size: 1vw;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         font-family: Raleway, sans-serif;
         padding-top: 2vw;
@@ -1439,7 +1439,6 @@
         border: 0.17vw solid #C72929;
         margin-right: 6vw;
         display: grid;
-        justify-items: start;
     }
     #kitchen{
         width: 94vw;
@@ -1476,7 +1475,6 @@
         flex-shrink: 0;
         border-radius: 3vw;
         border: 0.17vw solid #ffffff;
-        justify-items: center;
     }
 
     .free {
