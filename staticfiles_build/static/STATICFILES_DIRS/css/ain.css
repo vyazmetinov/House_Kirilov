@@ -1374,7 +1374,6 @@
         /* transform: scale(-1); */
         font-style: normal;
         text-decoration: none;
-        width: 34vw;
     }
 
     .call_number:hover .underline_r {
@@ -1420,10 +1419,10 @@
     .down-header-down {
         width: 94vw;
         position: relative;
-        padding-top: 4vh;
+        padding-top: 3vw;
         align-items: center;
         display: flex;
-        padding-bottom: 2vw;
+        padding-bottom: 6vw;
     }
 
     #banya_outside {
@@ -1575,6 +1574,7 @@
         color: #FFFFFF;
         /* display: grid; */
         padding-top: 3vw;
+        transform: translateX(-7vw);
     }
 
     .vertical_line_plot {
@@ -1587,6 +1587,7 @@
 
     .fifth {
         position: relative;
+        padding-bottom: 3vw;
         padding-top: 3vw;
         min-height: auto;
         display: grid;
@@ -1666,6 +1667,7 @@
         letter-spacing: 0.15vw;
         padding-bottom: 4vw;
         /* justify-items: start; */
+        transform: translateX(-7vw);
     }
 
     #map {
