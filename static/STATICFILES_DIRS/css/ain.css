@@ -1574,7 +1574,7 @@
         color: #FFFFFF;
         /* display: grid; */
         padding-top: 3vw;
-        transform: translateX(-7vw);
+        transform: translateX(-14vw);
     }
 
     .vertical_line_plot {
@@ -1667,7 +1667,7 @@
         letter-spacing: 0.15vw;
         padding-bottom: 4vw;
         /* justify-items: start; */
-        transform: translateX(-7vw);
+        transform: translateX(-14vw);
     }
 
     #map {
@@ -1750,6 +1750,7 @@
 
 .line_gallery {
     height: 3vw;
+    margin-left: 2vw;
 }
 
 .hui {
