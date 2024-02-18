@@ -1422,7 +1422,7 @@
         padding-top: 3vw;
         align-items: center;
         display: flex;
-        padding-bottom: 6vw;
+        padding-bottom: 4vw;
     }
 
     #banya_outside {
@@ -1667,7 +1667,7 @@
         letter-spacing: 0.15vw;
         padding-bottom: 4vw;
         /* justify-items: start; */
-        transform: translateX(-15vw);
+        transform: translateX(-16vw);
     }
 
     #map {
