@@ -1315,13 +1315,13 @@
         margin-top: 2vw;
     }
     #house_inside{
-        width: 100vw;
+        width: 100%;
     }
     #banya_outside{
         width: 94vw;
     }
     #banya_inside{
-        width: 100vw;
+        width: 100%;
         /* -webkit-transform-origin-y: top; */
         transform: scale(-1);
     }
@@ -1442,7 +1442,7 @@
         display: grid;
     }
     #kitchen{
-        width: 100vw;
+        width: 100%;
         border-radius: 0;
         transform: scale(-1);
     }
@@ -1574,7 +1574,7 @@
         color: #FFFFFF;
         /* display: grid; */
         padding-top: 3vw;
-        transform: translateX(-14vw);
+        transform: translateX(-13vw);
     }
 
     .vertical_line_plot {
@@ -1667,12 +1667,12 @@
         letter-spacing: 0.15vw;
         padding-bottom: 4vw;
         /* justify-items: start; */
-        transform: translateX(-14vw);
+        transform: translateX(-15vw);
     }
 
     #map {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 26vh;
     }
 
