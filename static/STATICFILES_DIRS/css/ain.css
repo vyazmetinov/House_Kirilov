@@ -2270,6 +2270,7 @@
         font-family: Railway, sans-serif
     }
     .black_rect3{
+        width: 75vw;
         margin-top: 3vw;
         background-color: rgba(0,0,8,0.3);
         border-radius:  2.5vw;
@@ -2321,7 +2322,6 @@
         color: #FFFFFF;
         margin-top: 1vw;
     }
-
     .cirkle_close {
         position: absolute;
         border: 1px solid #FFFFFF;
