@@ -891,7 +891,7 @@
         font-size: 3vw;
         color: #FFFFFF;
         text-align: center;
-        transform: translate3d(-0.2vw, -0.2vw, 0vw);
+        transform: translate3d(0.4vw, 0.5vw, 0vw);
     }
 
     .first_date {
@@ -1338,6 +1338,8 @@
         padding: 1vw;
     }
     .name{
+        display: flex;
+        align-items: flex-end;
         font-family: Raleway, sans-serif;
         color: #FFFFFF;
         font-size: 2vw;
@@ -1356,6 +1358,12 @@
     }
     .avito_icon{
         width: 5vw;
+    }
+    .feedback-date{
+        font-family: Montserrat, sans-serif;
+       font-size: 1.6vw;
+        color: #707070;
+        padding-left: 2vw;
     }
 @media (any-pointer: coarse) {
     body {
@@ -2317,10 +2325,10 @@
     .cirkle_close {
         position: absolute;
         border: 1px solid #FFFFFF;
-        left: 97%;
-        top: 0%;
-        height: 3vw;
-        width: 3vw;
+        left: 93%;
+        top: 1%;
+        height: 5vw;
+        width: 5vw;
         border-radius: 50%;
         background: #707070;
     }
@@ -2331,7 +2339,7 @@
         font-size: 3vw;
         color: #FFFFFF;
         text-align: center;
-        transform: translate3d(-0.2vw, -0.2vw, 0vw);
+        transform: translate3d(0.4vw, 0.8vw, 0vw);
     }
 
     .first_date {
@@ -2610,7 +2618,7 @@
         background: rgba(112, 112, 112, 0.3);
         width: 100%;
         height: 26%;
-        top: 1%;
+        top: 0%;
         /* left: 10%; */
         display: none;
         position: absolute;
@@ -2625,26 +2633,29 @@
     .choosed-img {
         position: relative;
         /* padding-top: 65vw; */
-        width: 151%;
+        /* width: 151%; */
+        height: 76%;
         max-height: 80%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         padding-bottom: 1vw;
     }
 
 
     .choose_img {
-        width: 58%;
+        width: 80%;
         object-fit: scale-down;
+        /* height: 100%; */
     }
 
     .cont {
         position: absolute;
-        max-width: 80%;
+        max-width: 90%;
+        max-height: 90%;
         width: 90%;
         display: flex;
         margin-bottom: 1vw;
-        top: 90%;
+        top: 94%;
     }
 
 .cont {}
@@ -2653,7 +2664,7 @@
         position: relative;
         color: #FFFFFF;
         width: 10vw;
-        font-size: 2.2vw;
+        font-size: 7.2vw;
         cursor: pointer;
         border: none;
         background: none;
@@ -2764,7 +2775,16 @@
         font-family: Raleway, sans-serif;
         color: #FFFFFF;
         font-size: 6vw;
+        display: flex;
+        align-items: baseline;
     }
+    .feedback-date{
+        font-family: Montserrat, sans-serif;
+       font-size: 4vw;
+        color: #707070;
+        padding-left: 2vw;
+    }
+
     .feedback-block{
         position: relative;
         display: flow-root;
